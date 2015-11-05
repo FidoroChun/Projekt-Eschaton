@@ -1,0 +1,2 @@
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.3.50' (10060)")
+OperationalError: (1045, "Access denied for user 'root'@'192.168.3.34' (using password: YES)")
