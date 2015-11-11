@@ -113,7 +113,7 @@ def db(action="", arg1=False, arg2=False, arg3=False, arg4=False):
 		return cur.fetchone()
 	elif do == "get_users":
 		if filter == False:
-			sql = "SELECT `ID`,`username`,`name`,`imagefilename`,`roles`,`created`,`created_by` FROM `user`"
+			sql = "SELECT `ID`,`username`,`name`,`imagefilename`,`roles`,`created`,`created_by`, `usergroup` FROM `user`"
 			db_execute(sql, action, arg1, arg2, arg3, arg4)
 			return cur.fetchall()
 		else:
@@ -302,7 +302,7 @@ def destroy_objects(classes=["all"], object=None):
 				pass
 				
 def treeview(instance=False, action=False, options=False):
-	global settings, objects, tag
+	global settings, objects, tag, global_treeview_instance
 	if instance == False and action != "create":
 		print "Treeview(): Keine Instanz übergeben!"
 		return
@@ -337,6 +337,8 @@ def treeview(instance=False, action=False, options=False):
 		tree.tag_configure(0, background=settings["bg_color_list"])
 		tree.tag_configure(1, background=settings["bg_color"])
 		tree.tag_configure("no_edit", background="#FFFFFF", foreground=settings["bg_color_button"])
+		tree.tag_configure("fg_red", foreground="#ee9090")
+		tree.tag_configure("fg_green", foreground="#90ee90")
 		for i in o["rows"]:
 			if i[0] == "":
 				iid = str(i[1])
@@ -421,6 +423,7 @@ def treeview(instance=False, action=False, options=False):
 			
 	#
 	objects.append(tree)
+	global_treeview_instance = tree
 	return tree
 	
 def action_buttons(action=False, options=False):
@@ -494,6 +497,9 @@ def treeview_get_selection_info(event=False): #TODO: IndexError wenn man auf ber
 			"rowname":str(tree.item(tree.selection()[0])["text"]).split(":")[0].lower(),
 			"index":tree.index(tree.selection()[0]),
 			"parent":tree.parent(tree.selection()[0])} if len(tree.selection()) != 0 else False
+	elif event == "Mitarbeiter":
+		dict = {
+			"id":tree.selection()[0],} if len(tree.selection()) != 0 else False
 	else:
 		dict = {
 			"id":tree.selection()[0],
@@ -581,17 +587,17 @@ def entry_popup(options=False):
 			lab.grid(row=n, column=1, padx=20, pady=5, sticky="NW")
 			#
 			if o["type_"+i] == "password":
-				e = Entry(fpopup, show="*")
+				e = Entry(fpopup, show="*", width=30)
 				popup_objects.update({"entry_"+i:e})
 			elif o["type_"+i] == "big":
-				e = Text(fpopup)
+				e = Text(fpopup, height=4, width=30, relief=SUNKEN)
 				popup_objects.update({"text_"+i:e})
-			if o["type_"+i] == "image":
+			elif o["type_"+i] == "image":
 				e = Button(fpopup, text="Datei", command=entry_popup_button_image, bg=settings["bg_color"])
 				popup_objects.update({"imagebutton_"+i:e})
 				popup_objects.update({"file_"+i:False})
 			else:
-				e = Entry(fpopup)
+				e = Entry(fpopup, width=30)
 				popup_objects.update({"entry_"+i:e})
 			e.grid(row=n, column=2, padx=20, pady=5, sticky="NW")
 			if first == 0:
@@ -600,9 +606,9 @@ def entry_popup(options=False):
 	but = Button(fpopup, text="   Fertig   ", command=lambda: entry_popup_return(event=False))
 	but.grid(row=n+1, column=3, padx=20, pady=5, sticky="NW")
 	hin = Label(fpopup, bg=settings["bg_color"], text="mit * gekennzeichnete Felder müssen ausgefüllt werden", fg=settings["bg_color_list"])
-	hin.grid(row=n+1, column=1, padx=20, pady=5, sticky="NW")
+	hin.grid(row=n+1, column=1, padx=20, pady=5, columnspan=2, sticky="NW")
 	#----------------------------
-	popup.bind("<Return>", entry_popup_return)
+	#popup.bind("<Return>", entry_popup_return)
 	popup.bind("<Escape>", entry_popup_esc)
 	popup.mainloop()
 	
@@ -709,6 +715,61 @@ def role_popup(id):
 	popup.bind("<F5>", lambda: role_popup_action(event="refresh"))
 	popup.mainloop()
 
+def detail_frame(options=False):
+	global frame_object, frame_object_data, objects
+	if options == False:
+		frame_object.destroy()
+		frame_object = None
+		frame_object_data = {}
+		return True
+	else:
+		if "frame_object_data" in globals():
+			pass
+		else:
+			frame_object_data = {}
+		if len(frame_object_data) == 0:
+			frame_object_data = {
+				"width":512,
+				"height":614,
+				"x":512,
+				"y":1
+			}
+		for i in options.keys():
+			frame_object_data.update({i:options[i]})
+			dfd = frame_object_data.copy()
+	# Frame
+	gui_style = ttk.Style()
+	gui_style.configure('My.TFrame', background='#FFFFFF', relief="groove", borderwidth=5)
+	frame_object = ttk.Frame(frames[2], width=dfd["width"], height=dfd["height"], style="My.TFrame")
+	frame_object.place(x=dfd["x"], y=dfd["y"])
+	#Elements
+	row = 0
+	keys = sorted(dfd.keys())
+	for key in keys:
+		if key.split("_")[0] == "field":
+			if dfd[key][0] == "label":
+				dfd[key+"__title"] = Label(frame_object, text=dfd[key][1]+":", font="Arial 14", background='#FFFFFF')
+				dfd[key+"__title"].grid(row=row+1, column=1, padx=10, pady=5, columnspan=2, sticky="NW")
+				dfd[key+"__content"] = Label(frame_object, text=dfd[key][2], font="Arial 10", background='#FFFFFF')
+				dfd[key+"__content"].grid(row=row+2, column=1, padx=10, pady=5, columnspan=2, sticky="NW")
+				row = row + 2
+			elif dfd[key][0] == "title":
+				dfd[key+"__title"] = Label(frame_object, text=dfd[key][1], font="Arial 14", background='#FFFFFF')
+				dfd[key+"__title"].grid(row=row+1, column=1, padx=10, pady=5, columnspan=2, sticky="NW")
+				row = row + 1
+			elif dfd[key][0] == "list":
+				if dfd.has_key(key+"__listcount") == False:
+					dfd[key+"__listcount"] = 0
+					item_key = key+"__item_"+str(dfd[key+"__listcount"])
+				dfd[item_key+"_0"] = Label(frame_object, text=dfd[key][1]+":", font="Arial 10", background='#FFFFFF')
+				dfd[item_key+"_1"] = Label(frame_object, text=dfd[key][2], font="Arial 10", background='#FFFFFF')
+				dfd[item_key+"_0"].grid(row=row+1, column=1, padx=10, pady=5, columnspan=1, sticky="NW")
+				dfd[item_key+"_1"].grid(row=row+1, column=2, padx=10, pady=5, columnspan=1, sticky="NW")
+				row = row + 1
+			else:
+				print "frame_object(): Unknown fieldtype >{0}<".format(dfd[key][0])
+	
+	
 def tfi(type=False, data=False):
 	if type == "M.roles":
 		roles = []
@@ -751,6 +812,15 @@ def button_press(id=False, arg1=""):
 				"type_pw":"password",
 				"type_photo":"image"}
 			entry_popup(options=dict)
+		elif tab_button_names[active_tab] == "Aufträge":
+			dict = {
+				"name":"Name*",
+				"desc":"Beschreibung*",
+				"prio":"Priorität",
+				"for":"Für",
+				"type_desc":"big",
+				"type_for":"chooser"}
+			entry_popup(options=dict)
 	elif id == "action_rem":
 		if tab_button_names[active_tab] == "Mitarbeiter":
 			sel = treeview_get_selection_info()
@@ -767,44 +837,47 @@ def button_press(id=False, arg1=""):
 
 #----------------------------------------------------------------------------------------
 
-def tab_open_auftraege(): #TODO: Neumachen
-	global frames, tab_buttons, objects, settings
+def tab_open_auftraege(db_request="get_jobs"): #TODO: Neumachen
+	global frames, tab_buttons, objects, settings, jobs
 	destroy_objects()
-	#----- Alle erledigten löschen
-	jobs = db(action="get_jobs", arg1=account[0])
-	objects.append(Button(frames[1], padx=4, pady=2, text="Erledigte Löschen", command=lambda: button_press(id=5)))
-	objects[0].grid(row=1, column=1, padx=0, pady=0, columnspan=1, sticky="NW")
-	#-Tabellenkopf
-	labels = ["DATUM", "PRIORITÄT", "NAME", "BESCHREIBUNG", "ERSTELLT VON", "AKTIONEN"]
-	for i in labels:
-		objects.append(Label(frames[2], bg="#FFFF99", padx=4, pady=2, font="14", text=i))
-	m = 1
-	while True:
-		if m < 6:
-			objects[m].grid(row=1, column=m, padx=0, pady=0, columnspan=1, sticky="NW")
-		# Unterbrecher
-		if m == 6:
-			objects[6].grid(row=1, column=m, padx=0, pady=0, columnspan=2, sticky="NW")
-			break
-		m = m + 1
-	#Listenelemente
-	n = 0
+	#Frame 2  
+	jobs = db(action=db_request, arg1=account[0])
+	rows = []
 	for i in jobs:
-		n = n + 1
-		labels = [i[7], i[3], i[1], i[2], db(action="get_user_username" ,arg1=str(i[8]))]
-		for j in labels:
-			objects.append(Label(frames[2], bg=settings["bg_color"], padx=4, pady=2, text=j))
-		objects.append(Button(frames[2], padx=4, pady=2, text="Erledigt"+str(n), command=lambda: button_press(id=3, arg1="Reihe "+str(n))))
-		objects.append(Button(frames[2], padx=4, pady=2, text="Löschen", command=lambda: button_press(id=4, arg1="Reihe "+str(n))))
-		# TODO: Buttons identifizieren
-		m = 0
-		while True:
-			objects[(7*n+m)].grid(row=n+1, column=m+1, padx=0, pady=0, columnspan=1, sticky="NW")
-			# Unterbrecher
-			if m == 6:
-				break
-			m = m + 1
-	
+		print str(i[5])
+		rows.append( ( "", i[0], (i[0], i[3], i[6], "✔" if str(i[5]) == "1" else "✘", i[1]), ("fg_green" if str(i[5]) == "1" else "",) ) )
+	dict = {
+		"parent":frames[2],
+		"height":"30",
+		"manager":"pack",
+		"filter":True,
+		"query_count":len(jobs),
+		"columns":[("#0", 50, "ID"),
+				("prio", 50, "Priorität"),
+				("date", 150,"Datum"),
+				("done", 50, "Erledigt"),
+				("name", 362, "Name")],
+		"rows":rows,
+		"manager":"place",
+		"x":0,
+		"y":1
+	}
+	tree = treeview(action="create", options=dict)
+	# Frame 1
+	action_buttons(action="create")
+	# DetailFrame
+	dict = {
+		"x":680,
+		"field_1":("label", "Name", ""),
+		"field_2":("label", "Beschreibung", ""),
+		"field_3":("title", "Meta Informationen", ""),
+		"field_4":("list", "ID", ""),
+		"field_5":("list", "Priorität", ""),
+		"field_6":("list", "Erledigt", ""),
+		"field_7":("list", "Erstellt", ""),
+		"field_8":("list", "Erstellt von", ""),
+	}
+	detail_frame(options=dict)
 	
 def tab_open_lager():
 	treeview()
@@ -822,15 +895,16 @@ def tab_open_mitarbeiter(db_request="get_users"):
 	users = db(action=db_request)
 	rows = []
 	for i in users:
-		rows.append( ( "", i[0], (i[0], i[1], i[2]) ) )
-		rows.append( ( i[0], "", ("ID:", i[0], ""), ("no_edit",) ) )
-		rows.append( ( i[0], "", ("Username:", i[1], "") ) )
-		rows.append( ( i[0], "", ("Name:", i[2], "") ) )
-		rows.append( ( i[0], "", ("Rollen:", tfi("M.roles", i[4]), "") ) )
-		rows.append( ( i[0], "", ("Passwort:", "-", "") ) )
-		rows.append( ( i[0], "", ("Bild:", i[3], "") ) )
-		rows.append( ( i[0], "", ("Erstellt:", i[5], ""), ("no_edit",) ) )
-		rows.append( ( i[0], "", ("Erstellt von:", tfi("S.user", i[6]), ""), ("no_edit",) ) )
+		rows.append(  ( "", i[0], (i[0], i[1], i[2]) )  )
+		rows.append(  ( i[0], "", ("ID:", i[0], ""), ("no_edit",) )  )
+		rows.append(  ( i[0], "", ("Username:", i[1], "") )  )
+		rows.append(  ( i[0], "", ("Name:", i[2], "") )  )
+		rows.append(  ( i[0], "", ("Rollen:", tfi("M.roles", i[4]), "") )  )
+		rows.append(  ( i[0], "", ("Benutzergruppe:",i[7], ""), ("no_edit",) )  )
+		rows.append(  ( i[0], "", ("Passwort:", "-", "") )  )
+		rows.append(  ( i[0], "", ("Bild:", i[3], "") )  )
+		rows.append(  ( i[0], "", ("Erstellt:", i[5], ""), ("no_edit",) )  )
+		rows.append(  ( i[0], "", ("Erstellt von:", tfi("S.user", i[6]), ""), ("no_edit",) )  )
 	dict = {
 		"parent":frames[2],
 		"height":"30",
@@ -993,9 +1067,26 @@ def event_double_button_1(event):
 				role_popup(id=sel["parent"])
 		
 def event_treeview_button_1(event):
-	global tab_button_names, active_tab, tag
+	global tab_button_names, active_tab, tag, tree
 	if tab_button_names[active_tab] == "Mitarbeiter":
 		destroy_objects(classes=["mitarbeiter_treeview_entry"])
+	elif tab_button_names[active_tab] == "Aufträge":
+		tree = event.widget
+		sel = treeview_get_selection_info(event="Mitarbeiter")
+		if sel == False: #Nichts tun, wenn keine Auswahl getroffen (z.B. bei Klick auf Header)
+			return
+		for i in jobs:
+			if int(i[0]) == int(sel["id"]):
+				dict = {
+					"field_1":("label", "Name", i[1]),
+					"field_2":("label", "Beschreibung", i[2]),
+					"field_4":("list", "ID", i[0]),
+					"field_5":("list", "Priorität", i[3]),
+					"field_6":("list", "Erledigt", "Ja" if str(i[5]) == "1" else "Nein"),
+					"field_7":("list", "Erstellt", i[6]),
+					"field_8":("list", "Erstellt von", tfi(type="S.user", data=i[7])),
+				}
+		detail_frame(options=dict)
 	
 def lc_lab(text_=""):
 	global lab, lc
@@ -1023,9 +1114,9 @@ def checkup():
 			tkMessageBox.showerror(title="Fehler",
 			message="Datei {0} konnte nicht gefunden werden.\nEine Neuinstallation des Programms könnte den Fehler beheben.".format(i))
 	lc_lab("Fertig!")
-	while True:
-		if (time.time()-start_time) > 2:
-			break
+	#~ while True: #TODO: Wieder aktivieren
+		#~ if (time.time()-start_time) > 2:
+			#~ break
 	lc.destroy()
 	main_frame()
 	

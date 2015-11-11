@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Erstellungszeit: 05. Nov 2015 um 17:55
+-- Erstellungszeit: 11. Nov 2015 um 17:29
 -- Server Version: 5.6.27-0ubuntu0.15.04.1
 -- PHP-Version: 5.6.4-4ubuntu6.4
 
@@ -111,7 +111,7 @@ CREATE TABLE IF NOT EXISTS `jobs` (
   `name` varchar(30) NOT NULL COMMENT 'Name des Auftrags.',
   `description` varchar(30) NOT NULL COMMENT 'Beschreibung des Auftrags.',
   `priority` int(11) NOT NULL COMMENT 'Priorität des Auftrags, höhere Zahlen sind wichtigere Aufträge.',
-  `for_ID` int(3) NOT NULL COMMENT 'ID des Benutzers oder der Rolle, für die der Auftrag ist.',
+  `for_ID` int(3) NOT NULL COMMENT 'ID der Rolle, für die der Auftrag ist.',
   `done` int(1) NOT NULL COMMENT 'Gibt an, ob der Auftrag erledigt wurde.',
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Zeitpunkt der Erstellung des Auftrags.',
   `created_by` int(3) NOT NULL COMMENT 'ID des Benutzers, welcher diesen Auftrag erstellt hat.'
@@ -123,7 +123,7 @@ CREATE TABLE IF NOT EXISTS `jobs` (
 
 INSERT INTO `jobs` (`ID`, `name`, `description`, `priority`, `for_ID`, `done`, `created`, `created_by`) VALUES
 (1, 'Todo', 'Todos erledigen', 1, 1, 0, '2015-10-01 15:02:06', 1),
-(2, 'Bla', 'BlaBlaBlaBlaBlaBlaBlaBlaBlaBla', 1, 1, 0, '2015-10-01 15:47:45', 1),
+(2, 'Bla', 'BlaBlaBlaBlaBlaBlaBlaBlaBlaBla', 1, 1, 1, '2015-10-01 15:47:45', 1),
 (3, 'huhu', 'huhuhuhuhuhuhuhh', 1, 1, 0, '2015-10-01 15:47:45', 1);
 
 -- --------------------------------------------------------
@@ -199,7 +199,7 @@ CREATE TABLE IF NOT EXISTS `roles` (
   `permissions` varchar(10000) NOT NULL COMMENT 'Rechte dieser Rolle, getrennt durch '','' (Komma) oder '' '' (Leerzeichen).',
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Zeitstempel an dem diese Rolle erstellt wurde.',
   `created_by` int(3) NOT NULL COMMENT 'ID des Benutzers, der diese Rolle erstellt hat.'
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Daten für Tabelle `roles`
@@ -207,7 +207,8 @@ CREATE TABLE IF NOT EXISTS `roles` (
 
 INSERT INTO `roles` (`ID`, `rolename`, `shortname`, `permissions`, `created`, `created_by`) VALUES
 (1, 'Betatester', 'BET', 'tab.open.*\r\naccount.login\r\nconfig.exit', '2015-10-01 13:08:16', 1),
-(2, 'Standortmanager', 'SOM', '', '2015-10-08 09:23:36', 1);
+(2, 'Standortmanager', 'SOM', '', '2015-10-08 09:23:36', 1),
+(3, 'usergroup_1', 'USR', '', '2015-11-11 14:51:40', 1);
 
 -- --------------------------------------------------------
 
@@ -298,32 +299,16 @@ CREATE TABLE IF NOT EXISTS `user` (
   `imagefilename` varchar(100) NOT NULL COMMENT 'Typ des Bildes.',
   `roles` varchar(100) NOT NULL COMMENT 'Rollen des Benutzers, durch '','' (Koma) oder '' '' (Leerzeichen) getrennt.',
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Zeitstempel der Erstellung des Benutzers.',
-  `created_by` int(3) NOT NULL COMMENT 'ID des Benutzers, der diesen erstellt hat.'
-) ENGINE=InnoDB AUTO_INCREMENT=391 DEFAULT CHARSET=utf8;
+  `created_by` int(3) NOT NULL COMMENT 'ID des Benutzers, der diesen erstellt hat.',
+  `usergroup` int(3) NOT NULL COMMENT 'Benutzergruppe des Benutzers.'
+) ENGINE=InnoDB AUTO_INCREMENT=387 DEFAULT CHARSET=utf8;
 
 --
 -- Daten für Tabelle `user`
 --
 
-INSERT INTO `user` (`ID`, `username`, `password`, `name`, `image`, `imagefilename`, `roles`, `created`, `created_by`) VALUES
-(1, 'admin', '123', 'Administrator', NULL, '', '1, 2', '2015-10-01 13:08:26', 1),
-(2, 'hans', '123', 'Hans Peter', NULL, '', '1, 2', '2015-10-01 15:10:20', 1),
-(3, 'random', 'fr', 'Random Guy', NULL, '', '1', '2015-10-02 14:26:01', 1),
-(371, '710527901', 'dfg', '5', NULL, '', '1', '2015-10-02 14:37:32', 1),
-(372, '730933594', 'sdfghjdsasdfg', '6207744807217208', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(373, '962794459', 'random', '6052631603162180', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(374, '60209174', 'g', '1603509142078062', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(375, '506953946', 'random', '7769910105890101', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(376, '141617648', 'random', '3488576651266402', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(377, '677867872', 'random', '8615658066341917', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(378, '131964516', 'random', '6117937206441406', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(379, '702394246', 'random', '604451193396823', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(380, '855153595', 'random', '6806141910702189', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(381, '556561862', 'random', '292327507542180', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(382, '929984222', 'random', '2906723543372794', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(383, '432430192', 'random', '1498941869806065', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(384, '163567330', 'random', '5276071969246087', NULL, '', '1', '2015-10-02 14:37:33', 1),
-(386, '367030248', 'random', '2509918357217403', NULL, '', '1', '2015-10-02 14:37:33', 1);
+INSERT INTO `user` (`ID`, `username`, `password`, `name`, `image`, `imagefilename`, `roles`, `created`, `created_by`, `usergroup`) VALUES
+(1, 'admin', '123', 'Administrator', NULL, '', '1, 2', '2015-10-01 13:08:26', 1, 3);
 
 -- --------------------------------------------------------
 
@@ -353,7 +338,24 @@ INSERT INTO `user_deleted` (`ID`, `username`, `password`, `name`, `image`, `imag
 (388, '52061910', 'random', '7421305072327647', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-05 16:26:23', 1),
 (387, '337786449', 'random', '7236818248675303', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-05 16:33:18', 1),
 (385, '132847', 'random', '9752722865119803', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-05 16:36:48', 385),
-(390, 'a', 'a', '', NULL, '', '', '2015-11-05 16:39:49', 1, '2015-11-05 16:39:59', 390);
+(390, 'a', 'a', '', NULL, '', '', '2015-11-05 16:39:49', 1, '2015-11-05 16:39:59', 390),
+(386, '367030248', 'random', '2509918357217403', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:00', 1),
+(384, '163567330', 'random', '5276071969246087', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:01', 1),
+(383, '432430192', 'random', '1498941869806065', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:02', 1),
+(382, '929984222', 'random', '2906723543372794', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:03', 1),
+(381, '556561862', 'random', '292327507542180', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:04', 1),
+(380, '855153595', 'random', '6806141910702189', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:04', 1),
+(379, '702394246', 'random', '604451193396823', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:05', 1),
+(378, '131964516', 'random', '6117937206441406', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:05', 1),
+(377, '677867872', 'random', '8615658066341917', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:06', 1),
+(376, '141617648', 'random', '3488576651266402', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:06', 1),
+(375, '506953946', 'random', '7769910105890101', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:07', 1),
+(374, '60209174', 'g', '1603509142078062', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:07', 1),
+(373, '962794459', 'random', '6052631603162180', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:08', 1),
+(372, '730933594', 'sdfghjdsasdfg', '6207744807217208', NULL, '', '1', '2015-10-02 14:37:33', 1, '2015-11-11 14:49:09', 1),
+(371, '710527901', 'dfg', '5', NULL, '', '1', '2015-10-02 14:37:32', 1, '2015-11-11 14:49:09', 1),
+(3, 'random', 'fr', 'Random Guy', NULL, '', '1', '2015-10-02 14:26:01', 1, '2015-11-11 14:49:10', 1),
+(2, 'hans', '123', 'Hans Peter', NULL, '', '1, 2', '2015-10-01 15:10:20', 1, '2015-11-11 14:49:10', 1);
 
 --
 -- Indizes der exportierten Tabellen
@@ -435,7 +437,7 @@ MODIFY `id` int(3) NOT NULL AUTO_INCREMENT COMMENT 'ID des Standortes.',AUTO_INC
 -- AUTO_INCREMENT für Tabelle `roles`
 --
 ALTER TABLE `roles`
-MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT COMMENT 'ID der Rolle.',AUTO_INCREMENT=3;
+MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT COMMENT 'ID der Rolle.',AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT für Tabelle `units`
 --
@@ -445,7 +447,7 @@ MODIFY `id` int(3) NOT NULL AUTO_INCREMENT COMMENT 'ID der VPE.';
 -- AUTO_INCREMENT für Tabelle `user`
 --
 ALTER TABLE `user`
-MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT COMMENT 'ID des Benutzers.',AUTO_INCREMENT=391;
+MODIFY `ID` int(3) NOT NULL AUTO_INCREMENT COMMENT 'ID des Benutzers.',AUTO_INCREMENT=387;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
