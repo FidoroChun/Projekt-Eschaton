@@ -5,21 +5,30 @@
 # VER 1
 prog_version = "1.0.0"
 # DATE 17.07.2015
+# http://www.way2python.de/unsortiert/tkwidgetprint.py
 
-import PIL.Image
-import PIL.ImageTk
+
+import win32ui, win32print, win32con
+import Image as Img
+import ImageWin, ImageGrab
 import MySQLdb as mdb
 from Tkinter import *
 import random, string
 import tkMessageBox
 import ConfigParser
+import PIL.ImageTk
 import tkFileDialog
+import PIL.Image
 import base64
+import hashlib
+import shutil
+import ftplib
 import urllib
 import time
 import sha
 import ttk
 import os
+
 
 def mdb_error(e=False):
 	if e == False:
@@ -28,7 +37,7 @@ def mdb_error(e=False):
 	if eno == "2003":
 		tkMessageBox.showerror(title="CR_CONN_HOST_ERROR",
 		message="Kann nicht zum MySQL-Server verbinden.")
-		exit(1)
+		config_exit()
 	else:
 		tkMessageBox.showerror(title="ERROR",
 		message="Undefinierter MDB Error: "+e)
@@ -38,9 +47,9 @@ def config_exit(NONE=[]):
 	if con != "":
 		con.close()
 	root.destroy()
+	os._exit(0)
 	
-	
-def db_execute(sql, action, arg1, arg2, arg3, arg4, format=False):
+def db_execute(sql):
 	global con, cur, settings, account
 	try:
 		cur.execute(sql)
@@ -77,7 +86,7 @@ def db(action="", arg1=False, arg2=False, arg3=False, arg4=False):
 		filter = False
 	if do == "account_check":
 		sql = "SELECT `password` FROM `user` WHERE `username`='" + arg1 + "'" #TODO: Passwort verschlüsseln
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		fetch = cur.fetchall()
 		if fetch == ():
 			return False
@@ -87,13 +96,13 @@ def db(action="", arg1=False, arg2=False, arg3=False, arg4=False):
 			return False
 	elif do == "init_settings":
 		sql = "SELECT * FROM `settings` WHERE 1"
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		for i in cur.fetchall():
 			settings[i[0]] = i[1]
 		return True
 	elif do == "get_user_name":
 		sql = "SELECT `name` FROM `user` WHERE `ID`='" + arg1 + "'"
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		fetch = cur.fetchone()
 		if fetch == None:
 			return ""
@@ -101,68 +110,86 @@ def db(action="", arg1=False, arg2=False, arg3=False, arg4=False):
 			return fetch[0]
 	elif do == "get_user_username":
 		sql = "SELECT `username` FROM `user` WHERE `ID`='" + arg1 + "'"
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		return cur.fetchone()[0]
-	elif do == "get_jobs":
-		sql = "SELECT * FROM `jobs` WHERE `for_ID`='" + arg1 + "'"
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+	elif do == "get_user_jobs":
+		roles = db(action="get_user_roles", arg1=arg1)
+		sql = "SELECT * FROM `jobs` WHERE "
+		for r in roles:
+			sql = sql + "`for_ID` LIKE '%{0}%' OR ".format(r)
+		sql = sql[:-4] + ";"
+		db_execute(sql)
 		return cur.fetchall()
 	elif do == "get_user":
 		sql = "SELECT * FROM `user` WHERE `username`='" + arg1 + "'"
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		return cur.fetchone()
 	elif do == "get_users":
+		sql = "SELECT `ID`,`username`,`name`,`imagefiletype`,`roles`,`created`,`created_by`, `usergroup` FROM `user`"
 		if filter == False:
-			sql = "SELECT `ID`,`username`,`name`,`imagefilename`,`roles`,`created`,`created_by`, `usergroup` FROM `user`"
-			db_execute(sql, action, arg1, arg2, arg3, arg4)
+			db_execute(sql)
 			return cur.fetchall()
 		else:
-			sql = "SELECT `ID`,`username`,`name`,`imagefilename`,`roles`,`created`,`created_by` FROM `user`" + filter
-			db_execute(sql, action, arg1, arg2, arg3, arg4)
+			sql = sql + filter
+			db_execute(sql)
 			return cur.fetchall()
 	elif do == "get_user_id":
 		sql = "SELECT `ID` FROM `user` WHERE `username`='" + arg1 + "'"
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		return cur.fetchone()[0]
 	elif do == "get_roles_name":
 		sql = "SELECT `rolename` FROM `roles` WHERE `ID`='" + arg1 + "'"
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		return cur.fetchone()
 	elif do == "get_roles":
 		sql = "SELECT * FROM `roles` WHERE 1"
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		return cur.fetchall()
 	elif do == "get_user_roles":
 		sql = "SELECT `roles` FROM `user` WHERE `ID`='" + arg1 + "'"
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		return cur.fetchall()[0][0].replace(" ", "").split(",")
+	elif do == "get_user_image":
+		sql = "SELECT `image`,`imagefiletype` FROM `user` WHERE `ID`='{0}'".format(arg1)
+		db_execute(sql)
+		image = cur.fetchone()
+		if image[0] == "":# Keine Datei in der DB
+			return "./images/noavatar.png"
+		file = "{0}.{1}".format(image[0], image[1])
+		if os.path.isfile(file) == True:# Datei bereits geladen
+			return "./images/cache/{0}".format(file)
+		else: #Datei laden
+			ftp_download(image)
+			return "./images/cache/{0}".format(file)
+	elif do == "get_nodes":
+		sql = "SELECT `ID`, `name`,`adress`,`created`,`created_by`,`image`,`imagefiletype` FROM `nodes` WHERE 1;"
+		db_execute(sql)
+		return cur.fetchall()
 	# SET section
-	elif do == "set_user_image":
-		pass
-		## Arg1=dateipfad; arg2=ID
-		
-		#TODO: Fertig bauen
-		
-		#sql = "UPDATE `user` SET `image`='%s',`imagefilename`=%s WHERE `ID`='%s'" % (arg1, arg2, arg3)
-		#db_execute(sql, action, arg1, arg2, arg3, arg4)
-		#return cur.fetchone()
+	elif do == "set_image":
+		max = {"user":(160, 160),
+			"nodes":(300, 200)}
+		arg1 = make_thumnail(arg1, (max[arg3][0], max[arg3][1]))
+		hash, mime = ftp_upload(arg1)
+		sql = "UPDATE `{3}` SET `image`='{0}', `imagefiletype`='{1}' WHERE `ID`='{2}'".format(hash, mime, arg2, arg3)
+		db_execute(sql)
 	elif do == "set_user_username":
 		sql = "UPDATE `user` SET `username`='{0}' WHERE `ID`='{1}'".format(arg1, arg2)
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		if arg2 == account[0]: #Logout bei ändern von eigenen Daten!
 			tkMessageBox.showinfo(title="Hinweis", message="Änderung erfolgreich!\nAus Sicherheitsgründen werden Sie jetzt ausgeloggt!")
 			account_logout()
 		return cur.fetchone()
 	elif do == "set_user_password" or do == "set_user_passwort":
 		sql = "UPDATE `user` SET `password`='{0}' WHERE `ID`='{1}'".format(arg1, arg2)
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		if arg2 == account[0]: #Logout bei ändern von eigenen Daten!
 			tkMessageBox.showinfo(title="Hinweis", message="Änderung erfolgreich!\nAus Sicherheitsgründen werden Sie jetzt ausgeloggt!")
 			account_logout()
 		return cur.fetchone()
 	elif do == "set_user_name":
 		sql = "UPDATE `user` SET `name`='{0}' WHERE `ID`='{1}'".format(arg1, arg2)
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		if arg2 == account[0]:
 			tkMessageBox.showinfo(title="Hinweis", message="Änderung erfolgreich!\nAus Sicherheitsgründen werden Sie jetzt ausgeloggt!")
 			account_logout()
@@ -175,38 +202,110 @@ def db(action="", arg1=False, arg2=False, arg3=False, arg4=False):
 			sql = sql[:-2] + "' WHERE `ID`='{0}'".format(arg2)
 		else:
 			sql = "UPDATE `user` SET `roles`='' WHERE `ID`='{0}'".format(arg2)
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		if arg2 == account[0]: #Logout bei ändern von eigenen Daten!
 			tkMessageBox.showinfo(title="Hinweis", message="Änderung erfolgreich!\nAus Sicherheitsgründen werden Sie jetzt ausgeloggt!")
 			account_logout()
 		return cur.fetchone()
+	elif do == "set_job_mark":
+		sql = "SELECT `done` FROM `jobs` WHERE `ID`='{0}';".format(arg1)
+		db_execute(sql)
+		sql = "UPDATE `jobs` SET `done` = '{0}' WHERE `ID` = '{1}';".format("0" if int(cur.fetchone()[0]) == 1 else "1", arg1)
+		db_execute(sql)
 	# INSERT section
 	elif do == "insert_user":
-		sql = "INSERT INTO `user` (`ID`, `username`, `password`, `name`, `image`, `imagefilename`, `roles`, `created`, `created_by`) VALUES (NULL, '{username}', '{pw}', '{name}', NULL, '', '', CURRENT_TIMESTAMP, '{by}');".format(**arg1)
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		sql = "INSERT INTO `user` (`ID`, `username`, `password`, `name`, `image`, `imagefiletype`, `roles`, `created`, `created_by`) VALUES (NULL, '{username}', '{pw}', '{name}', NULL, '', '', CURRENT_TIMESTAMP, '{by}');".format(**arg1)
+		db_execute(sql)
+		return
+	elif do == "insert_job":
+		sql = "INSERT INTO `eschaton`.`jobs` (`ID`, `name`, `description`, `priority`, `for_ID`, `done`, `created`, `created_by`) VALUES (NULL, '{name}', '{desc}', '{prio}', '{for}', '0', CURRENT_TIMESTAMP, '{by}');".format(**arg1)
+		db_execute(sql)
 		return
 	# DELETE section
 	elif do == "delete_user":
 		sql = "INSERT INTO `user_deleted` SELECT*, CURRENT_TIME(), '{0}' FROM `user` WHERE `ID`='{1}'".format(account[0], arg1)
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		sql = "DELETE FROM `user` WHERE `ID`='{0}';".format(arg1)
-		db_execute(sql, action, arg1, arg2, arg3, arg4)
+		db_execute(sql)
 		if arg1 == account[0]: #Logout bei ändern von eigenen Daten!
 			tkMessageBox.showinfo(title="Hinweis", message="Änderung erfolgreich!\nAus Sicherheitsgründen werden Sie jetzt ausgeloggt!")
 			account_logout()
 		return
+	elif do == "delete_job":
+		sql = "INSERT INTO `jobs_deleted` SELECT*, CURRENT_TIME(), '{0}' FROM `jobs` WHERE `ID`='{1}'".format(account[0], arg1)
+		db_execute(sql)
+		sql = "DELETE FROM `jobs` WHERE `ID`='{0}';".format(arg1)
+		db_execute(sql)
+		return
+	elif do == "delete_user_image":
+		sql = "UPDATE `user` SET `image`='', `imagefiletype`='' WHERE `ID`='{0}'".format(arg1)
+		db_execute(sql)
+		return
 	else:
 		return
 
+def ftp_upload(file):
+	#ftp Create and Login
+	ftp = ftplib.FTP("192.168.3.47")
+	ftp.login("eschaton", "test123")
+	#file
+	mime = os.path.splitext(file)[1].replace(".", "")
+	f = open(file, "rb")
+	#gethash
+	hash = hashlib.sha224(f.read()).hexdigest()
+	#file
+	f.close()
+	f = open(file, "rb")
+	#upload
+	ftp.storbinary("STOR {0}".format(hash), f, 1024)
+	f.close()
+	return hash, mime
+	
+def ftp_download(file):
+	if type(file) == vartype["str"]:
+		file = file.split(".")
+	#file=[filename, filetype]
+	#ftp Create and Login
+	ftp = ftplib.FTP("192.168.3.47")
+	ftp.login("eschaton", "test123")
+	#file
+	f = open("./images/cache/{0}.{1}".format(file[0], file[1]), "wb")
+	#download
+	ftp.retrbinary("RETR {0}".format(file[0]), f.write)
+	f.close()
+	return
+
+def clear_cache():
+	shutil.rmtree("./images/cache", ignore_errors=True)
+	os.makedirs("./images/cache")
+def make_thumnail(infile, size):
+	#Workaround, weil das fileobject von Image nicht geschlossen wird
+	#temp_file = "./images/cache/{0}.cache".format(str(int(time.time())))
+	outfile = "./images/cache/temp.jpg"
+	if infile != outfile:
+		im = Img.open(infile)
+		im.thumbnail(size, Img.ANTIALIAS)
+		im.save(outfile, "JPEG")
+		#
+		#
+		f = open(outfile, "rb")
+		hash = hashlib.sha224(f.read()).hexdigest()
+		newname = outfile.replace("temp", hash)
+		f.close()
+		if os.path.isfile(newname) == True:# Datei bereits vorhanden
+			os.remove(newname)
+		os.rename(outfile, newname)
+		return newname
+
 def account_login(NONE=[]):
 	global account, objects
-	if db(action="account_check", arg1=objects[3].get(), arg2=objects[4].get()) == True:
-		id = str(db(action="get_user_id", arg1=objects[3].get()))
+	if db(action="account_check", arg1=objects[2].get(), arg2=objects[3].get()) == True:
+		id = str(db(action="get_user_id", arg1=objects[2].get()))
 		user_name = db(action="get_user_name", arg1=id)
-		account = [id, objects[3].get(), user_name]
+		account = [id, objects[2].get(), user_name]
 		root.title("Eschaton Client - {0}".format(user_name))
 		tab_open_login()
-	elif objects[3].get() == "" and objects[4].get() == "":
+	elif objects[2].get() == "" and objects[3].get() == "":
 		pass
 	else:
 		tkMessageBox.showerror(title="Login Fehler", message="Kein Account konnte diesem Passwort zugeordnet werden.\nBitte überprüfen Sie Ihre Eingaben.")
@@ -219,7 +318,7 @@ def account_logout(NONE=[]):
 	tkMessageBox.showinfo(title="Logout", message="Sie wurden erfolgreich ausgeloggt!")
 
 def init_vars():
-	global tab_buttons, frames, geo, pad, tab_button_names, objects, active_tab, con, account, tag, settings
+	global tab_buttons, frames, geo, pad, tab_button_names, objects, active_tab, active_tab_widget, active_tab_name, con, account, tag, settings, vartype
 	tab_button_names = [
 	"Aufträge",
 	"Lager",
@@ -229,24 +328,24 @@ def init_vars():
 	"Einstellungen",
 	"Login"
 	]
-	tab_buttons = [
-	Label(frames[0], height=1, bg=settings["bg_color_button"], padx=pad[0], pady=pad[1], font="14", text=tab_button_names[0]),
-	Label(frames[0], height=1, bg=settings["bg_color_button"], padx=pad[0], pady=pad[1], font="14", text=tab_button_names[1]),
-	Label(frames[0], height=1, bg=settings["bg_color_button"], padx=pad[0], pady=pad[1], font="14", text=tab_button_names[2]),
-	Label(frames[0], height=1, bg=settings["bg_color_button"], padx=pad[0], pady=pad[1], font="14", text=tab_button_names[3]),
-	Label(frames[0], height=1, bg=settings["bg_color_button"], padx=pad[0], pady=pad[1], font="14", text=tab_button_names[4]),
-	Label(frames[0], height=1, bg=settings["bg_color_button"], padx=pad[0], pady=pad[1], font="14", text=tab_button_names[5]),
-	Label(frames[0], height=1, bg=settings["bg_color_button"], padx=pad[0], pady=pad[1], font="14", text=tab_button_names[6])
-	]
 	objects = []
 	active_tab = -1
+	active_tab_widget = None
+	active_tab_name = ""
 	# id, username, readable_name
 	account = [0, "", "", ""]
 	con = ""
 	tag = {}
 	init_settings()
+	#System
+	vartype = {"str":"",
+		"tuple":(0, 1),
+		"list":[],
+		"int":0,
+		"float":1.0,
+		"bool":True}
 
-def init_settings():
+def init_settings(): 
 	global settings
 	settings = {
 	"db_server":"192.168.3.47",
@@ -264,14 +363,28 @@ def init_settings():
 	}
 	
 def init_window():
-	global tab_buttons, frames, c, geo, settings, root
+	global tab_buttons, frames, c, geo, settings, root, style
+	#Styles
+	style = ttk.Style()
+	style.configure('TFrame', background=settings["bg_color"], relief="groove", borderwidth=5)
+	style.configure('TLabelframe', background=settings["bg_color"], relief="raised", borderwidth=50)
+	style.configure('TLabelframe.Label', background=settings["bg_color"], foreground="#000000")
+	style.configure('TButton', relief="flat", borderwidth=0,
+	background="#FFFFFF",
+	activebackground="#FF0000",
+	foreground="#00FF00",
+	highlightbackground="#0000FF",
+	highlightcolor="#F00F0F",
+	overrelief="sunken"
+	)
 	root.configure(bg=settings["bg_color"])
-	n = 0
-	for i in tab_buttons:
-		n = n + 1
-		i.grid(row=1, column=n, padx=2, pady=2, sticky="NW")
-	for i in frames:
-		i.config(bg=settings["bg_color"])
+	main_frame.config(bg=settings["bg_color"])
+	button_frame.config(bg=settings["bg_color"])
+	query_frame.config(bg=settings["bg_color"])
+	for i in frames.keys():
+		frames[i].config(bg=settings["bg_color"])
+	hub.select(len(tab_button_names)-1) #Call Login Tab
+	change_tab()
 		
 def destroy_objects(classes=["all"], object=None):
 	global objects, tag, frames
@@ -338,7 +451,7 @@ def treeview(instance=False, action=False, options=False):
 		tree.tag_configure(1, background=settings["bg_color"])
 		tree.tag_configure("no_edit", background="#FFFFFF", foreground=settings["bg_color_button"])
 		tree.tag_configure("fg_red", foreground="#ee9090")
-		tree.tag_configure("fg_green", foreground="#90ee90")
+		tree.tag_configure("fg_green", foreground="#008844")
 		for i in o["rows"]:
 			if i[0] == "":
 				iid = str(i[1])
@@ -402,20 +515,20 @@ def treeview(instance=False, action=False, options=False):
 			if o.has_key("query_count") == False:
 				print "Treeview(): Ein Filter wurde gewählt. Schlüssel 'query_count' wurde nicht übergeben!"
 				return
-			e = Entry(frames[3])
+			e = Entry(query_frame)
 			e.grid(row=1, column=1, padx=4, pady=2, columnspan=1, sticky="W")
 			objects.append(e)
 			tag.update({"filter":e})
 			
-			b = Button(frames[3], padx=4, pady=2, text="Filtern", command=lambda: button_press(id="treeview_filter"))
+			b = Button(query_frame, padx=4, pady=2, text="Filtern", command=lambda: button_press(id="treeview_filter"))
 			b.grid(row=1, column=2, padx=4, pady=2, columnspan=1, sticky="W")
 			objects.append(b)
 			
-			s = ttk.Separator(frames[3],orient=VERTICAL)
+			s = ttk.Separator(query_frame,orient=VERTICAL)
 			s.grid(row=1, column=3, padx=4, pady=2, columnspan=1, sticky="W")
 			objects.append(s)
 			
-			l = Label(frames[3], bg=settings["bg_color"], padx=4, pady=2, text="Ergebnisse: "+str(o["query_count"]))
+			l = Label(query_frame, bg=settings["bg_color"], padx=4, pady=2, text="Ergebnisse: "+str(o["query_count"]))
 			l.grid(row=1, column=4, padx=4, pady=2, columnspan=1, sticky="W")
 			objects.append(l)
 		#Binds
@@ -426,67 +539,52 @@ def treeview(instance=False, action=False, options=False):
 	global_treeview_instance = tree
 	return tree
 	
-def action_buttons(action=False, options=False):
-	global objects, settings, act_buttons
+def action_buttons(action=False, functions=False):
+	global objects, settings, actionbutton
 	if action == False:
 		return
 	if action == "create":
-		dict= {}
-		add = False
-		rem = False
-		edit = False
-		if type(options) != type(dict):
-			o = False
-		else:
-			o = options.copy()
+		actionbutton = {}
+		# Standartbuttons
+		if functions == False:
+			functions = "AD"
+		#Bilder
 		act_buttons = {
 			"img_file_add":"./images/plus.png",
 			"img_file_rem":"./images/bin.png",
-			"img_file_edit":"./images/pencil.png"}
-		if o == False:
-			image = PIL.ImageTk.PhotoImage(PIL.Image.open(act_buttons["img_file_add"]))
-			add = Button(frames[1], image=image, bg=settings["bg_color"], command=lambda: button_press(id="action_add"))
-			add.image = image
-			add.grid(row=1, column=1, padx=10, pady=0, sticky="NW")
-			objects.append(add)
-			
-			image = PIL.ImageTk.PhotoImage(PIL.Image.open(act_buttons["img_file_rem"]))
-			rem = Button(frames[1], image=image, bg=settings["bg_color"], command=lambda: button_press(id="action_rem"))
-			rem.image = image
-			rem.grid(row=1, column=2, padx=10, pady=0, sticky="NW")
-			objects.append(rem)
-		else:
-			if o.has_key("show_add") == False:
-				o.update({"show_add":True})
-			if o.has_key("show_rem") == False:
-				o.update({"show_rem":True})
-			if o.has_key("show_edit") == False:
-				o.update({"show_edit":False})
-			if o["show_add"] == True:
-				image = PIL.ImageTk.PhotoImage(PIL.Image.open(act_buttons["img_file_add"]))
-				add = Button(frames[1], image=image, bg=settings["bg_color"], command=lambda: button_press(id="action_add"))
-				add.image = image
-				add.grid(row=1, column=1, padx=10, pady=0, sticky="NW")
-				objects.append(add)
-					
-			if o["show_rem"] == True:
-				image = PIL.ImageTk.PhotoImage(PIL.Image.open(act_buttons["img_file_rem"]))
-				rem = Button(frames[1], image=image, bg=settings["bg_color"], command=lambda: button_press(id="action_rem"))
-				rem.image = image
-				rem.grid(row=1, column=2, padx=10, pady=0, sticky="NW")
-				objects.append(rem)
-					
-			if o["show_edit"] == True:
-				print "jup"
-				image = PIL.ImageTk.PhotoImage(PIL.Image.open(act_buttons["img_file_edit"]))
-				edit = Button(frames[1], image=image, bg=settings["bg_color"], command=lambda: button_press(id="action_edit"))
-				edit.image = image
-				edit.grid(row=1, column=3, padx=10, pady=0, sticky="NW")
-				objects.append(edit)
-		act_buttons.update({"add":add})
-		act_buttons.update({"rem":rem})
-		act_buttons.update({"edit":edit})
-		return True
+			"img_file_edit":"./images/pencil.png",
+			"img_file_prin":"./images/printer.png",
+			"img_file_mark":"./images/checkmark.png",
+			"img_file_none":"./images/info.png"}
+		n = 0
+		for i in functions:
+			i = i.upper()
+			type = "none"
+			n = n + 1
+			if i == "A":
+				type = "add"
+			if i == "R" or i == "D":
+				type = "rem"
+			if i == "P":
+				type = "prin"
+			if i == "M" or i == "F":
+				type = "mark"
+			if i == "E":
+				type = "edit"
+			if i == "S":
+				sep = ttk.Separator(button_frame, orient=VERTICAL)
+				sep.grid(row=2, column=n, padx=0, pady=0, sticky="NS")
+				objects.append(sep)
+				continue
+			root.update()
+			image = PIL.ImageTk.PhotoImage(PIL.Image.open(act_buttons["img_file_{0}".format(type)]))
+			but = Button(button_frame, image=image, bg=settings["bg_color"], text="action_{0}".format(type), relief=FLAT, width=80, height=45)
+			but.image = image
+			but.grid(row=2, column=n, padx=0, pady=0, sticky="NW")
+			objects.append(but)
+			actionbutton[type] = but
+			del but
+		return
 		
 def treeview_get_selection_info(event=False): #TODO: IndexError wenn man auf bereits vorhandenes entry klickt
 	global tree
@@ -536,21 +634,32 @@ def entry_popup_return(event):
 			if type(popup_objects[i]) != type(False):
 				f = str(mdb.escape_string(open(popup_objects[i], "rb").read()))
 				popup_results.update({i.split("_")[1]:popup_objects[i]})
+		if i.split("_")[0] == "number":
+			popup_results.update({i.split("_")[1]:popup_objects[i].get()})
 		else:
 			pass
+	popup_results.update({"by":str(account[0])})
+	#
 	if tab_button_names[active_tab] == "Mitarbeiter":
-			popup_results.update({"by":str(account[0])})
 			if popup_results["username"] != "" and popup_results["pw"] != "" and popup_results["name"] != "":
 				db(action="insert_user", arg1=popup_results)
 				if popup_results["photo"] != "":
 					userid = db(action="get_user", arg1=popup_results["username"])[0]
-					db(action="set_user_image", arg1=popup_results["photo"], arg2=userid)
+					db(action="set_image", arg1=popup_results["photo"], arg2=userid, arg3="user")
 					pass
 			else:
 				tkMessageBox.showerror(title="Fehler", message="Bitte füllen sie alle Angaben aus, die mit * gekennzeichnet sind!")
 				popup.focus()
 				return
 			tab_open_mitarbeiter()
+	elif tab_button_names[active_tab] == "Aufträge":
+			if popup_results["name"] != "" and popup_results["prio"] != "" and popup_results["for"] != "":
+				db(action="insert_job", arg1=popup_results)
+			else:
+				tkMessageBox.showerror(title="Fehler", message="Bitte füllen sie alle Angaben aus, die mit * gekennzeichnet sind!")
+				popup.focus()
+				return
+			tab_open_auftraege()
 	popup.destroy()
 	return
 	
@@ -581,7 +690,7 @@ def entry_popup(options=False):
 	n = 0
 	first = 0
 	for i in o.keys():
-		if i.split("_")[0] != "type":
+		if i.split("_")[0] != "type" and i.split("_")[0] != "option":
 			n = n + 1
 			lab = Label(fpopup, bg=settings["bg_color"], text=o[i]+":")
 			lab.grid(row=n, column=1, padx=20, pady=5, sticky="NW")
@@ -596,6 +705,15 @@ def entry_popup(options=False):
 				e = Button(fpopup, text="Datei", command=entry_popup_button_image, bg=settings["bg_color"])
 				popup_objects.update({"imagebutton_"+i:e})
 				popup_objects.update({"file_"+i:False})
+			elif o["type_"+i] == "slider":
+				option = o["option_"+i].split("-")
+				e = Scale(fpopup, from_=option[0], to=option[1], orient=HORIZONTAL,
+				bg=settings["bg_color"], #weiß
+				troughcolor=settings["bg_color_list"], #grau
+				activebackground=settings["bg_color_button"], #grau
+				highlightbackground=settings["bg_color"], #weiß
+				)
+				popup_objects.update({"number_"+i:e})
 			else:
 				e = Entry(fpopup, width=30)
 				popup_objects.update({"entry_"+i:e})
@@ -610,6 +728,7 @@ def entry_popup(options=False):
 	#----------------------------
 	#popup.bind("<Return>", entry_popup_return)
 	popup.bind("<Escape>", entry_popup_esc)
+	popup.grab_set()
 	popup.mainloop()
 	
 def role_popup_refresh_lb():
@@ -703,7 +822,7 @@ def role_popup(id):
 	right.grid(row=3, column=2, padx=20, pady=5, sticky="EW")
 	ok.grid(row=8, column=3, padx=20, pady=5, sticky="EW")
 	lab.grid(row=2, column=3, padx=20, pady=5, sticky="NESW")
-	sep.grid(row=7, column=1, padx=20, pady=5, sticky="N", columnspan=3)
+	sep.grid(row=7, column=1, padx=20, pady=5, sticky="NS")
 	lab2.grid(row=1, column=1, padx=20, pady=5, sticky="NW", columnspan=3)
 	# LB Contents
 	role_popup_refresh_lb()
@@ -716,59 +835,95 @@ def role_popup(id):
 	popup.mainloop()
 
 def detail_frame(options=False):
-	global frame_object, frame_object_data, objects
+	global detail_frame_object, detail_frame_data, objects
 	if options == False:
-		frame_object.destroy()
-		frame_object = None
-		frame_object_data = {}
+		detail_frame_object.destroy()
+		detail_frame_object = None
+		detail_frame_data = {}
 		return True
 	else:
-		if "frame_object_data" in globals():
+		if "detail_frame_data" in globals():
 			pass
 		else:
-			frame_object_data = {}
-		if len(frame_object_data) == 0:
-			frame_object_data = {
+			detail_frame_data = {}
+		if len(detail_frame_data) == 0:
+			detail_frame_data = {
 				"width":512,
 				"height":614,
-				"x":512,
-				"y":1
+				"row":1,
+				"column":1
 			}
 		for i in options.keys():
-			frame_object_data.update({i:options[i]})
-			dfd = frame_object_data.copy()
+			detail_frame_data.update({i:options[i]})
+		dfd = detail_frame_data.copy()
 	# Frame
-	gui_style = ttk.Style()
-	gui_style.configure('My.TFrame', background='#FFFFFF', relief="groove", borderwidth=5)
-	frame_object = ttk.Frame(frames[2], width=dfd["width"], height=dfd["height"], style="My.TFrame")
-	frame_object.place(x=dfd["x"], y=dfd["y"])
+	detail_frame_object = ttk.Labelframe(active_tab_widget, width=dfd["width"], height=dfd["height"], text=" Details ")
+	detail_frame_object.grid(column=dfd["column"], row=dfd["row"])
+	detail_frame_object.grid_propagate(False)
 	#Elements
 	row = 0
 	keys = sorted(dfd.keys())
 	for key in keys:
 		if key.split("_")[0] == "field":
 			if dfd[key][0] == "label":
-				dfd[key+"__title"] = Label(frame_object, text=dfd[key][1]+":", font="Arial 14", background='#FFFFFF')
+				dfd[key+"__title"] = Label(detail_frame_object, text=dfd[key][1]+":", font="Arial 14", background='#FFFFFF')
 				dfd[key+"__title"].grid(row=row+1, column=1, padx=10, pady=5, columnspan=2, sticky="NW")
-				dfd[key+"__content"] = Label(frame_object, text=dfd[key][2], font="Arial 10", background='#FFFFFF')
+				dfd[key+"__content"] = Label(detail_frame_object, text=dfd[key][2], font="Arial 10", background='#FFFFFF')
 				dfd[key+"__content"].grid(row=row+2, column=1, padx=10, pady=5, columnspan=2, sticky="NW")
 				row = row + 2
 			elif dfd[key][0] == "title":
-				dfd[key+"__title"] = Label(frame_object, text=dfd[key][1], font="Arial 14", background='#FFFFFF')
+				dfd[key+"__title"] = Label(detail_frame_object, text=dfd[key][1], font="Arial 14", background='#FFFFFF')
 				dfd[key+"__title"].grid(row=row+1, column=1, padx=10, pady=5, columnspan=2, sticky="NW")
 				row = row + 1
 			elif dfd[key][0] == "list":
 				if dfd.has_key(key+"__listcount") == False:
 					dfd[key+"__listcount"] = 0
 					item_key = key+"__item_"+str(dfd[key+"__listcount"])
-				dfd[item_key+"_0"] = Label(frame_object, text=dfd[key][1]+":", font="Arial 10", background='#FFFFFF')
-				dfd[item_key+"_1"] = Label(frame_object, text=dfd[key][2], font="Arial 10", background='#FFFFFF')
+				dfd[item_key+"_0"] = Label(detail_frame_object, text=dfd[key][1]+":", font="Arial 10", background='#FFFFFF')
+				dfd[item_key+"_1"] = Label(detail_frame_object, text=dfd[key][2], font="Arial 10", background='#FFFFFF')
 				dfd[item_key+"_0"].grid(row=row+1, column=1, padx=10, pady=5, columnspan=1, sticky="NW")
 				dfd[item_key+"_1"].grid(row=row+1, column=2, padx=10, pady=5, columnspan=1, sticky="NW")
 				row = row + 1
 			else:
-				print "frame_object(): Unknown fieldtype >{0}<".format(dfd[key][0])
+				print "detail_frame_object(): Unknown fieldtype >{0}<".format(dfd[key][0])
+	objects.append(detail_frame_object)
 	
+def print_widget__grabwidget(widget):
+	# grabs widget and stores it as a file 
+	x = widget.winfo_rootx()
+	y = widget.winfo_rooty()
+	w = widget.winfo_width()
+	h = widget.winfo_height()
+	return ImageGrab.grab((x, y, x+w, y+h))
+	
+def print_widget(widget):
+	widget.update()
+	widget.update_idletasks()
+	image = print_widget__grabwidget(widget)
+	image.save("./images/tmp.bmp")
+	
+	# Creates a Dib instance from grabbed file
+	im = Img.open("./images./tmp.bmp")
+	dib = ImageWin.Dib('RGB',im.size)
+	dib.paste(im,None)
+	imagesize = (im.size[0]*10, im.size[1]*10) 
+	
+	# Sends the dib to the windows standard printer
+	printer = win32print.GetDefaultPrinter()
+	tkMessageBox.showinfo(title="Druckvorgang eingereiht!",
+		message="Der Auftrag wurde an den Drucker '{0}' gesendet!".format(printer))
+	phandle = win32print.OpenPrinter(printer)
+	dc = win32ui.CreateDC()
+	dc.CreatePrinterDC()
+	dc.StartDoc(im.filename)
+	dc.StartPage()
+	dib.draw(dc.GetHandleAttrib(), (0, 0) + imagesize)  # output size can be changed
+	dc.EndPage()										# by modifying the im.size tuple										   
+	dc.EndDoc()
+	win32print.ClosePrinter(phandle)
+	del dc
+	del im
+	os.unlink("./images/tmp.bmp")
 	
 def tfi(type=False, data=False):
 	if type == "M.roles":
@@ -790,18 +945,19 @@ def tfi(type=False, data=False):
 		return ""
 	return text
 
-def button_press(id=False, arg1=""):
+def button(event):
+	pass
+def button_press(id=False, arg=""):
 	global objects, tag
+	#
 	if id == 1:
 		account_login()
 	elif id == 2:
 		account_logout()
-	elif id == 3 or id == 4:
-		pass #Zu vergeben
 	elif id == "treeview_filter":
 		if tab_button_names[active_tab] == "Mitarbeiter":
 			text = tag["filter"].get()
-			tab_open_mitarbeiter(db_request="get_users|username name ID imagefilename created created_by}{0}".format(text))
+			tab_open_mitarbeiter(db_request="get_users|username name ID imagefiletype created created_by}{0}".format(text))
 	elif id == "action_add":
 		if tab_button_names[active_tab] == "Mitarbeiter":
 			dict = {
@@ -810,7 +966,7 @@ def button_press(id=False, arg1=""):
 				"pw":"Passwort*",
 				"photo":"Foto",
 				"type_pw":"password",
-				"type_photo":"image"}
+				"type_photo":"image",}
 			entry_popup(options=dict)
 		elif tab_button_names[active_tab] == "Aufträge":
 			dict = {
@@ -819,7 +975,9 @@ def button_press(id=False, arg1=""):
 				"prio":"Priorität",
 				"for":"Für",
 				"type_desc":"big",
-				"type_for":"chooser"}
+				"type_for":"pick_group",
+				"type_prio":"slider",
+				"option_prio":"1-10"}
 			entry_popup(options=dict)
 	elif id == "action_rem":
 		if tab_button_names[active_tab] == "Mitarbeiter":
@@ -831,23 +989,84 @@ def button_press(id=False, arg1=""):
 					db(action="delete_user", arg1=sel["id"])
 					if account[0] != 0:
 						tab_open_mitarbeiter()
+			else:
+				if sel["rowname"] == "bild":
+					db(action="delete_user_image", arg1=account[0])
+					tree.item(sel["id"], values=("Nein", ""))
+		elif tab_button_names[active_tab] == "Aufträge":
+			if job != False:
+				ask = tkMessageBox.askyesnocancel(title="Wirklich Löschen?",
+					message="Möchten Sie den Auftrag mit der id: '{0}' endgültig löschen?".format(job))
+				if ask == True:
+					db(action="delete_job", arg1=job)
+					tab_open_auftraege()
+	elif id == "action_prin":
+		if tab_button_names[active_tab] == "Aufträge":
+			if job_printable == True:
+				print_widget(detail_frame_object)
+			else:
+				tkMessageBox.showinfo(title="Druckauftrag nicht abgeschlossen!",
+					message="Bittw wählen Sie einen Auftrag zum drucken aus!")
 	elif id == "action_edit":
 		print "EDIT"
-	#TODO: 5
+	elif id == "action_mark":
+		if tab_button_names[active_tab] == "Aufträge":
+			if job != False:
+				db(action="set_job_mark", arg1=job)
+				tab_open_auftraege()
+	else:
+		print "button_press(): Unbekannte ID: {0}".format(id)
 
 #----------------------------------------------------------------------------------------
-
-def tab_open_auftraege(db_request="get_jobs"): #TODO: Neumachen
-	global frames, tab_buttons, objects, settings, jobs
+def check_tab_state():
+	global active_tab, active_tab_widget, active_tab_title, frames, hub, objects
+	n = 0
+	while True:
+		hub.tab(n, state=DISABLED if account[0] == 0 else NORMAL)
+		n = n + 1
+		if n == len(tab_button_names)-1:
+			break
+def change_tab(tab=None):
+	global active_tab, active_tab_widget, active_tab_title, frames, hub, objects, main_frame
 	destroy_objects()
+	check_tab_state()
+	if tab == None:
+		active_tab = hub.index(hub.select())
+		active_tab_widget = hub.select()
+		active_tab_title =  tab_button_names[active_tab]
+	else:
+		active_tab = tab_button_names.index(tab)
+		active_tab_widget = frames[tab]
+		active_tab_title =  tab
+		return
+	# Call TabFunction
+	if active_tab_title == "Aufträge":
+		tab_open_auftraege()
+	elif active_tab_title == "Lager":
+		tab_open_lager()
+	elif active_tab_title == "Produkte":
+		tab_open_produkte()
+	elif active_tab_title == "Standorte":
+		tab_open_standorte()
+	elif active_tab_title == "Mitarbeiter":
+		tab_open_mitarbeiter()
+	elif active_tab_title == "Einstellungen":
+		tab_open_einstellungen()
+	elif active_tab_title == "Login":
+		tab_open_login()
+	else:
+		print "Change_tab: Kein passender Titel gefunden: "+active_tab_title
+	
+def tab_open_auftraege(db_request="get_user_jobs"):
+	global frames, tab_buttons, objects, settings, jobs, job_printable, job
+	change_tab(tab="Aufträge")
 	#Frame 2  
 	jobs = db(action=db_request, arg1=account[0])
 	rows = []
 	for i in jobs:
-		print str(i[5])
 		rows.append( ( "", i[0], (i[0], i[3], i[6], "✔" if str(i[5]) == "1" else "✘", i[1]), ("fg_green" if str(i[5]) == "1" else "",) ) )
 	dict = {
-		"parent":frames[2],
+		"parent":active_tab_widget,
 		"height":"30",
 		"manager":"pack",
 		"filter":True,
@@ -858,16 +1077,20 @@ def tab_open_auftraege(db_request="get_jobs"): #TODO: Neumachen
 				("done", 50, "Erledigt"),
 				("name", 362, "Name")],
 		"rows":rows,
-		"manager":"place",
-		"x":0,
-		"y":1
+		"manager":"grid",
+		"row":1,
+		"column":1
 	}
 	tree = treeview(action="create", options=dict)
 	# Frame 1
-	action_buttons(action="create")
+	action_buttons(action="create", functions="ADSMSP")
 	# DetailFrame
+	job_printable = False
+	job = False
 	dict = {
-		"x":680,
+		"row":1,
+		"column":2,
+		"width":342,
 		"field_1":("label", "Name", ""),
 		"field_2":("label", "Beschreibung", ""),
 		"field_3":("title", "Meta Informationen", ""),
@@ -878,19 +1101,68 @@ def tab_open_auftraege(db_request="get_jobs"): #TODO: Neumachen
 		"field_8":("list", "Erstellt von", ""),
 	}
 	detail_frame(options=dict)
+	#Actionbuttons deaktivieren
+	actionbutton["rem"].config(state=DISABLED)
+	actionbutton["prin"].config(state=DISABLED)
+	actionbutton["mark"].config(state=DISABLED)
 	
 def tab_open_lager():
+	change_tab(tab="Lager")
+	#
 	treeview()
 	
 def tab_open_produkte():
+	change_tab(tab="Produkte")
+	#
 	pass
 	
 def tab_open_standorte():
-	pass		
+	global job_printable, nodes, job
+	change_tab(tab="Standorte")
+	#
+	nodes = db(action="get_nodes")
+	rows = []
+	for i in nodes:
+		rows.append(  ( "", i[0], (i[0], i[1]) )  )
+		rows.append(  ( i[0], "", ("ID:", i[0], ""), ("no_edit",) )  )
+		rows.append(  ( i[0], "", ("Standort:", i[1], "") )  )
+		rows.append(  ( i[0], "", ("Adresse:", i[2], "") )  )
+		rows.append(  ( i[0], "", ("Logo/Bild:", "Ja" if i[5] != "" else "Nein", "") )  )
+		rows.append(  ( i[0], "", ("Erstellt:", i[3], ""), ("no_edit",) )  )
+		rows.append(  ( i[0], "", ("Erstellt von:", tfi("S.user", i[4]), ""), ("no_edit",) )  )
+	dict = {
+		"parent":active_tab_widget,
+		"height":"30",
+		"manager":"grid",
+		"filter":True,
+		"query_count":len(nodes),
+		"columns":[("#0", 100, "ID"),
+				("username", 200, "Standort")],
+		"rows":rows
+	}
+	tree = treeview(action="create", options=dict)
+	# Actionbuttons
+	action_buttons(action="create", functions="ADSP")
+	# Detailframe
+	job_printable = False
+	job = False
+	dict = {
+		"column":2,
+		"width":704,
+		"field_1":("image", "", ""),
+		"field_2":("label", "Name", ""),
+		"field_3":("label", "Adresse", ""),
+		"field_4":("title", "Meta Informationen", ""),
+		"field_4":("list", "ID", ""),
+		"field_6":("list", "Bild", ""),
+		"field_7":("list", "Erstellt", ""),
+		"field_8":("list", "Erstellt von", ""),
+	}
+	detail_frame(options=dict)
 
 def tab_open_mitarbeiter(db_request="get_users"):
 	global objects, frames, tree, tag, settings
-	destroy_objects()
+	change_tab(tab="Mitarbeiter")
 	# Frame 2
 	users = db(action=db_request)
 	rows = []
@@ -902,11 +1174,11 @@ def tab_open_mitarbeiter(db_request="get_users"):
 		rows.append(  ( i[0], "", ("Rollen:", tfi("M.roles", i[4]), "") )  )
 		rows.append(  ( i[0], "", ("Benutzergruppe:",i[7], ""), ("no_edit",) )  )
 		rows.append(  ( i[0], "", ("Passwort:", "-", "") )  )
-		rows.append(  ( i[0], "", ("Bild:", i[3], "") )  )
+		rows.append(  ( i[0], "", ("Bild:", "Ja" if i[3] != "" else "Nein", "") )  )
 		rows.append(  ( i[0], "", ("Erstellt:", i[5], ""), ("no_edit",) )  )
 		rows.append(  ( i[0], "", ("Erstellt von:", tfi("S.user", i[6]), ""), ("no_edit",) )  )
 	dict = {
-		"parent":frames[2],
+		"parent":active_tab_widget,
 		"height":"30",
 		"manager":"pack",
 		"filter":True,
@@ -914,63 +1186,61 @@ def tab_open_mitarbeiter(db_request="get_users"):
 		"columns":[("#0", 340, "ID"),
 				("username", 340, "Benutzername"),
 				("name", 340, "Name")],
-		"rows":rows
+		"rows":rows,
+		"row":1,
+		"column":1
 	}
 	tree = treeview(action="create", options=dict)
 	# Frame 1
 	action_buttons(action="create")
 	
 def tab_open_einstellungen():
+	change_tab(tab="Einstellungen")
+	#
 	pass
 	
 def tab_open_login():
-	global frames, tab_buttons, account, objects, settings
-	destroy_objects()
-	#-----
-	if account[0] == 0:
-		objects.append(Label(frames[2], bg=settings["bg_color"], padx=4, pady=2, font="14", text="Bitte loggen Sie sich ein!"))
-		objects.append(Label(frames[2], bg=settings["bg_color"], padx=4, pady=2, text="Benutzer:"))
-		objects.append(Label(frames[2], bg=settings["bg_color"], padx=4, pady=2, text="Passwort:"))
-		objects.append(Entry(frames[2]))
-		objects.append(Entry(frames[2], show="*"))
-		objects.append(Button(frames[2], padx=4, pady=2, text="Login", command=lambda: button_press(id=1)))
-		#
-		objects[0].grid(row=2, column=2, padx=0, pady=0, columnspan=2, sticky="N")
-		objects[1].grid(row=4, column=2, padx=0, pady=0, sticky="NE")
-		objects[2].grid(row=5, column=2, padx=0, pady=0, sticky="NE")
-		objects[3].grid(row=4, column=3, padx=0, pady=0, sticky="NW")
-		objects[3].focus()
-		objects[4].grid(row=5, column=3, padx=0, pady=0, sticky="NW")
-		objects[5].grid(row=6, column=2, padx=0, pady=0, columnspan=2, sticky="NW")
-		gui_style = ttk.Style()
-		gui_style.configure('My.TFrame', background='#FFFFFF', relief="sunken", borderwidth=5)
-		#frame = ttk.Frame(frames[2], style='My.TFrame', relief="groove")
-		#frame.grid(column=7, row=2)
-		
-		frame = ttk.Frame(frames[2], width=200, height=100, style="My.TFrame")
-		frame.grid(row=4, column=4)
-		lab = Label(frame, text="hahahahha")
-		lab.pack()
-	else:
+	global frames, tab_buttons, account, objects, settings, active_tab_widget
+	change_tab(tab="Login")
+	#Labelframe
+	frame = ttk.Labelframe(active_tab_widget)
+	frame.place(x=0, y=0)
+	if account[0] != 0:
 		user = db(action="get_user", arg1=account[1])
-		rows = []
-		rows.append( ( "", "", ("Benutzername:", user[1], "") ) )
-		rows.append( ( "", "", ("ID:", user[0], ""), ("no_edit",) ) )
-		rows.append( ( "", "", ("Name:", user[3], "") ) )
-		rows.append( ( "", "", ("Rollen:", tfi("M.roles", user[6]), "") ) )
-		rows.append( ( "", "", ("Erstellt:", user[7], ""), ("no_edit",) ) )
-		rows.append( ( "", "", ("Erstellt von:", tfi("S.user", user[8]), ""), ("no_edit",) ) )
-		dict = {
-			"parent":frames[2],
-			"height":"6",
-			"manager":"grid",
-			"filter":False,
-			"selectmode":"none",
-			"columns":[("#0", 100, ""),
-					("wert", 200, "")],
-			"rows":rows
-		}
-		tree = treeview(action="create", options=dict)
+		#Labelframe
+		frame.config(text=" Willkommen, {0}".format(user[3]))
+		#Elements
+		file = db(action="get_user_image", arg1=account[0])
+		image = PIL.ImageTk.PhotoImage(PIL.Image.open(file))
+		avatar = Label(frame, image=image, bg=settings["bg_color"])
+		avatar.image = image
+		objects.append(avatar)
+		objects.append(Label(frame, bg=settings["bg_color"], font="Arial 12", text=user[1]))
+		objects.append(Button(frame, width=12, font="Arial 12", text="Logout", bg=settings["bg_color"], command=lambda: button_press(id=2)))
+		#
+		objects[0].grid(row=1, column=1, sticky="WE", padx=4, pady=10)
+		objects[1].grid(row=2, column=1, sticky="WE", padx=4, pady=10)
+		objects[2].grid(row=3, column=1, sticky="WE", padx=4, pady=10)
+	else:
+		#Labelframe
+		frame.config(text=" Anmeldung ")
+		#Elements
+		objects.append(Label(frame, bg=settings["bg_color"], padx=4, pady=5, font="Arial 12", text="Benutzer:"))
+		objects.append(Label(frame, bg=settings["bg_color"], padx=4, pady=5, font="Arial 12", text="Passwort:"))
+		objects.append(Entry(frame, font="Arial 12"))
+		objects.append(Entry(frame, show="*", font="Arial 12"))
+		objects.append(Button(frame, padx=4, pady=2, width=9, font="Arial 12", text="Login", bg=settings["bg_color"], command=lambda: button_press(id=1)))
+		#
+		objects[0].grid(row=1, column=1, sticky="NW")
+		objects[1].grid(row=2, column=1, sticky="NW")
+		objects[2].grid(row=1, column=2, sticky="NW")
+		objects[2].focus()
+		objects[3].grid(row=2, column=2, sticky="NW")
+		objects[4].grid(row=3, column=2, columnspan=2, sticky="NE")
+	#Labelframe
+	objects.append(frame)
+	root.update()
+	frame.place(x=(geo[0]-frame.winfo_width())/2, y=((geo[1]*0.9)-frame.winfo_height())/2)
 	
 def event_key(event):
 	global active_tab, tab_button_names
@@ -981,33 +1251,15 @@ def event_key(event):
 			account_login()
 			
 def event_single_button_1(event):
-	global tab_buttons, active_tab, account, tab_button_names
-	#--
-	try:
-		if account[0] != 0:
-			if tab_button_names[tab_buttons.index(event.widget)] == "Aufträge":
-				tab_open_auftraege()
-			elif tab_button_names[tab_buttons.index(event.widget)] == "Lager":
-				tab_open_lager()
-			elif tab_button_names[tab_buttons.index(event.widget)] == "Produkte":
-				tab_open_produkte()
-			elif tab_button_names[tab_buttons.index(event.widget)] == "Standorte":
-				tab_open_standorte()
-			elif tab_button_names[tab_buttons.index(event.widget)] == "Mitarbeiter":
-				tab_open_mitarbeiter()
-			elif tab_button_names[tab_buttons.index(event.widget)] == "Einstellungen":
-				tab_open_einstellungen()
-			elif tab_button_names[tab_buttons.index(event.widget)] == "Login":
-				tab_open_login()
-			else:
-				pass
-			active_tab = tab_buttons.index(event.widget)
-		else:
-			if tab_button_names[tab_buttons.index(event.widget)] == "Login":
-				tab_open_login()
-			active_tab = tab_buttons.index(event.widget)
-	except ValueError:
-		pass
+	widget = event.widget
+	parent = widget._nametowidget(widget.winfo_parent())
+	widget_type = widget.winfo_class()
+	if parent == button_frame and widget_type == "Button":
+		widget_text = widget["text"]
+		button_press(widget_text)
+	
+def event_tab_button_1(event):
+	change_tab()
 
 def treeview_key_event_delete(event):
 	if tab_button_names[active_tab] == "Mitarbeiter":
@@ -1025,10 +1277,17 @@ def treeview_entry_event_return(event):
 		else:
 			tkMessageBox.showinfo(title="Passwort Erfolg", message="Das Passwort wurde erfolgreich geändert")
 		destroy_objects(classes=["mitarbeiter_treeview_entry"])
-
+	
+	if tab_button_names[active_tab] == "Standorte":
+		text = event.widget.get()
+		#
+		print tag[event.widget]["rowname"]
+	
 def treeview_entry_event_escape(event):
 	global tag
 	if tab_button_names[active_tab] == "Mitarbeiter":
+		destroy_objects(classes=["mitarbeiter_treeview_entry"])
+	elif tab_button_names[active_tab] == "Standorte":
 		destroy_objects(classes=["mitarbeiter_treeview_entry"])
 		
 def event_double_button_1(event):
@@ -1045,10 +1304,11 @@ def event_double_button_1(event):
 			pass
 		else:
 			if sel["rowname"] == "username" or sel["rowname"] == "name" or sel["rowname"] == "passwort":
-				e = Entry(frames[2])
-				e.insert(0, sel["text"])
+				e = Entry(active_tab_widget)
 				if sel["rowname"] == "passwort":
-					e.delete(0, END)
+					e.config(show="*")
+				else:
+					e.insert(0, sel["text"])
 				e.place(x=sel["x"], y=sel["y"])
 				e.focus()
 				e.select_range(0, END)
@@ -1059,15 +1319,42 @@ def event_double_button_1(event):
 			elif sel["rowname"] == "bild":
 				filepath = tkFileDialog.askopenfilename(parent=root, filetypes=[("JPEG", ".jpg"), ("PNG", ".png"), ("GIF", ".gif")])
 				if filepath != False:
-					#~ with open(filepath, "rb") as f:
-						#~ encoded_string = base64.b64encode(f.read())
-					db(action="set_user_image", arg1=filepath, arg2=sel["parent"])
-					#TODO: zeile ändern
+					db(action="set_image", arg1=filepath, arg2=sel["parent"], arg3="user")
+					tkMessageBox.showinfo(title="Upload erfolgreich",
+						message="Das Benutzerbild wurde erfolgreich hochgeladen.")
 			elif sel["rowname"] == "rollen":
 				role_popup(id=sel["parent"])
+	
+	elif tab_button_names[active_tab] == "Standorte":
+		destroy_objects(classes=["mitarbeiter_treeview_entry"])
+		sel = treeview_get_selection_info(event)
+		if sel == False: #Nichts tun, wenn keine Auswahl getroffen (z.B. bei Klick auf Header)
+			return
+		if tree.parent(sel["row"]) == "": #Nichts tun, wenn parent
+			return
+		#
+		if sel["column"] == "#0" or  sel["column"] == "#2": # Nichts tun, wenn != Datenspalte
+			pass
+		else:
+			if sel["rowname"] == "name" or sel["rowname"] == "adresse":
+				e = Entry(active_tab_widget)
+				e.insert(0, sel["text"])
+				e.place(x=sel["x"], y=sel["y"])
+				e.focus()
+				e.select_range(0, END)
+				e.bind("<Return>", treeview_entry_event_return)
+				e.bind("<Escape>", treeview_entry_event_escape)
+				objects.append(e)
+				tag.update({e:sel, "standorte_edit_entry":e})
+			elif sel["rowname"] == "logo/bild":
+				filepath = tkFileDialog.askopenfilename(parent=root, filetypes=[("JPEG", ".jpg"), ("PNG", ".png"), ("GIF", ".gif")])
+				if filepath != False:
+					db(action="set_image", arg1=filepath, arg2=sel["parent"], arg3="nodes")
+					tkMessageBox.showinfo(title="Upload erfolgreich",
+						message="Das Standortbild wurde erfolgreich geändert.")
 		
 def event_treeview_button_1(event):
-	global tab_button_names, active_tab, tag, tree
+	global tab_button_names, active_tab, tag, tree, job_printable, job
 	if tab_button_names[active_tab] == "Mitarbeiter":
 		destroy_objects(classes=["mitarbeiter_treeview_entry"])
 	elif tab_button_names[active_tab] == "Aufträge":
@@ -1075,17 +1362,64 @@ def event_treeview_button_1(event):
 		sel = treeview_get_selection_info(event="Mitarbeiter")
 		if sel == False: #Nichts tun, wenn keine Auswahl getroffen (z.B. bei Klick auf Header)
 			return
+		#info für actionbuttons(aktionen)
+		job_printable = True
+		#Setze Button zustände
+		actionbutton["rem"].config(state=NORMAL)
+		actionbutton["prin"].config(state=NORMAL)
 		for i in jobs:
 			if int(i[0]) == int(sel["id"]):
+				#info für actionbuttons(aktionen)
+				job = i[0]
+				#Setze Button zustände
+				if i[5] == "1":
+					actionbutton["mark"].config(state=NORMAL)
+					actionbutton["mark"].config(relief=SUNKEN)
+				else:
+					actionbutton["mark"].config(state=NORMAL)
+				#Detailansicht erneuern
 				dict = {
-					"field_1":("label", "Name", i[1]),
-					"field_2":("label", "Beschreibung", i[2]),
-					"field_4":("list", "ID", i[0]),
-					"field_5":("list", "Priorität", i[3]),
-					"field_6":("list", "Erledigt", "Ja" if str(i[5]) == "1" else "Nein"),
-					"field_7":("list", "Erstellt", i[6]),
-					"field_8":("list", "Erstellt von", tfi(type="S.user", data=i[7])),
+					"column":2,
+					"width":342,
+					"field_1":("label", "Name", ""),
+					"field_2":("label", "Beschreibung", ""),
+					"field_3":("title", "Meta Informationen", ""),
+					"field_4":("list", "ID", ""),
+					"field_5":("list", "Priorität", ""),
+					"field_6":("list", "Erledigt", ""),
+					"field_7":("list", "Erstellt", ""),
+					"field_8":("list", "Erstellt von", ""),
 				}
+		detail_frame()
+		detail_frame(options=dict)
+	elif tab_button_names[active_tab] == "Standorte":
+		tree = event.widget
+		sel = treeview_get_selection_info(event="Mitarbeiter")
+		if sel == False: #Nichts tun, wenn keine Auswahl getroffen (z.B. bei Klick auf Header)
+			return
+		#info für actionbuttons(aktionen)
+		job_printable = True
+		#Setze Button zustände
+		actionbutton["rem"].config(state=NORMAL)
+		actionbutton["prin"].config(state=NORMAL)
+		for i in nodes:
+			if str(i[0]) == str(sel["id"]):
+				#info für actionbuttons(aktionen)
+				job = i[0]
+				#Detailansicht erneuern
+				dict = {
+					"column":2,
+					"width":704,
+					"field_1":("image", i[5], ""),
+					"field_2":("label", "Name", i[1]),
+					"field_3":("label", "Adresse", i[2]),
+					"field_4":("title", "Meta Informationen", ""),
+					"field_4":("list", "ID", i[0]),
+					"field_6":("list", "Bild", "Ja" if i[5] != "" else "Nein"),
+					"field_7":("list", "Erstellt", i[3]),
+					"field_8":("list", "Erstellt von", tfi(type="S.user", data=i[4])),
+				}
+		detail_frame()
 		detail_frame(options=dict)
 	
 def lc_lab(text_=""):
@@ -1107,7 +1441,7 @@ def checkup():
 		mdb_error(e)
 	cur = con.cursor()
 	#
-	needed_files = ["config.ini", "images/Eschaton.png", "images/plus.png", "images/bin.png", "images/pencil.png"]
+	needed_files = ["config.ini", "images/Eschaton.png", "images/favicon.ico", "images/plus.png", "images/bin.png", "images/pencil.png"]
 	for i in needed_files:
 		lc_lab("Finde datei: {0}".format(i))
 		if os.path.isfile("./"+i) == False:
@@ -1146,7 +1480,7 @@ def loading_screen():
 	lab = Label(lc)
 	lab.place(x=0, y=380)	
 	#
-	lc.after(1, checkup)
+	lc.after(2000, checkup)
 	lc.mainloop()
 	
 def root_jump():
@@ -1161,36 +1495,52 @@ def root_jump():
 	root.deiconify()
 
 def main_frame():
-	global root, frames, geo, pad, settings
+	global root, frames, geo, pad, settings, hub, main_frame, query_frame, button_frame
+	#INIT
+	init_vars()
 	#-------------------------
 	root = Tk()
 	root.protocol("WM_DELETE_WINDOW", config_exit)
 	root.overrideredirect(False)
 	root.deiconify()
+	
+	#image = PIL.ImageTk.PhotoImage(PIL.Image.open("./images/Icon.png"), master=root)
+	#root.tk.call('wm', 'iconphoto', root._w, image)
+	root.iconbitmap("./images/favicon.ico")
+	
+	root.resizable(0, 0)
 	root.title("Eschaton Client - Kein Benutzer")
 	geo = [1024, 768]
 	pad = [20, 20]
 	root.geometry(str(geo[0])+"x"+str(geo[1]))
-	frames = []
-	frames.append(Frame(root, width=str(geo[0]), height=str(geo[1]*0.1)))
-	frames.append(Frame(root, width=str(geo[0]), height=str(geo[1]*0.05)))
-	frames.append(Frame(root, width=str(geo[0]), height=str(geo[1]*0.8)))
-	frames.append(Frame(root, width=str(geo[0]), height=str(geo[1]*0.05)))
-	n = 0
-	for i in frames:
-		n = n + 1
-		i.grid(row=n, column=1, padx=0, pady=0, sticky="NW")
-		i.grid_propagate(False)
+	#Frames
+	main_frame = Frame(root, width=str(geo[0]), height=str(geo[1]-105))
+	frames = {}
+	#Notebook
+	hub = ttk.Notebook(main_frame)
+	hub.grid(row=1, column=1, sticky="")
+	#Frames
+	for i in tab_button_names:
+		frames[i] = Frame(hub, width=str(geo[0]), height=str(geo[1]-105))
+		hub.add(frames[i], text=i)
+	button_frame = Frame(root, width=str(geo[0]), height="65")
+	query_frame = Frame(root, width=str(geo[0]), height="40")
+	#Frames Gridding
+	main_frame.grid(row=1, column=1, padx=0, pady=0, sticky="NW")
+	main_frame.grid_propagate(False)
+	button_frame.grid(row=2, column=1, padx=0, pady=0, sticky="NW")
+	button_frame.grid_propagate(False)
+	query_frame.grid(row=3, column=1, padx=0, pady=0, sticky="NW")
+	query_frame.grid_propagate(False)
 	#INIT
-	init_vars()
+	root_jump()
 	db(action="init_settings")
 	init_window()
-	tab_open_login()
 	#----------------------------
-	root.bind("<Button-1>", event_single_button_1)
+	root.bind("<ButtonRelease-1>", event_single_button_1)
 	root.bind("<Double-Button-1>", event_double_button_1)
 	root.bind("<Key>", event_key)
 	root.bind("<<TreeviewSelect>>", event_treeview_button_1)
-	root_jump()
+	root.bind("<<NotebookTabChanged>>", event_tab_button_1)
 	root.mainloop()
 loading_screen()

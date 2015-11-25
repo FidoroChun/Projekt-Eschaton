@@ -1,0 +1,1400 @@
+running py2exe
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\build
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\collect-2.7
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\bundle-2.7
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs
+*** searching for required modules ***
+*** parsing results ***
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5
+copying C:\Python27\tcl\tcl8.5\auto.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5
+copying C:\Python27\tcl\tcl8.5\clock.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\ascii.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\big5.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp1250.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp1251.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp1252.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp1253.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp1254.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp1255.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp1256.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp1257.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp1258.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp437.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp737.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp775.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp850.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp852.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp855.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp857.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp860.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp861.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp862.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp863.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp864.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp865.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp866.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp869.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp874.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp932.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp936.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp949.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\cp950.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\dingbats.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\ebcdic.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\euc-cn.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\euc-jp.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\euc-kr.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\gb12345.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\gb1988.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\gb2312-raw.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\gb2312.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso2022-jp.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso2022-kr.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso2022.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-1.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-10.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-13.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-14.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-15.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-16.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-2.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-3.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-4.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-5.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-6.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-7.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-8.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\iso8859-9.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\jis0201.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\jis0208.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\jis0212.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\koi8-r.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\koi8-u.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\ksc5601.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macCentEuro.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macCroatian.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macCyrillic.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macDingbats.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macGreek.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macIceland.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macJapan.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macRoman.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macRomania.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macThai.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macTurkish.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\macUkraine.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\shiftjis.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\symbol.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\encoding\tis-620.enc -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\encoding
+copying C:\Python27\tcl\tcl8.5\history.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\http1.0
+copying C:\Python27\tcl\tcl8.5\http1.0\http.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\http1.0
+copying C:\Python27\tcl\tcl8.5\http1.0\pkgIndex.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\http1.0
+copying C:\Python27\tcl\tcl8.5\init.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\af.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\af_za.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ar.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ar_in.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ar_jo.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ar_lb.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ar_sy.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\be.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\bg.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\bn.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\bn_in.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ca.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\cs.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\da.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\de.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\de_at.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\de_be.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\el.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_au.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_be.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_bw.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_ca.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_gb.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_hk.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_ie.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_in.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_nz.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_ph.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_sg.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_za.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\en_zw.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\eo.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_ar.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_bo.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_cl.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_co.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_cr.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_do.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_ec.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_gt.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_hn.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_mx.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_ni.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_pa.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_pe.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_pr.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_py.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_sv.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_uy.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\es_ve.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\et.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\eu.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\eu_es.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\fa.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\fa_in.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\fa_ir.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\fi.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\fo.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\fo_fo.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\fr.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\fr_be.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\fr_ca.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\fr_ch.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ga.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ga_ie.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\gl.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\gl_es.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\gv.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\gv_gb.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\he.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\hi.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\hi_in.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\hr.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\hu.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\id.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\id_id.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\is.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\it.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\it_ch.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ja.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\kl.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\kl_gl.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ko.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\kok.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\kok_in.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ko_kr.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\kw.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\kw_gb.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\lt.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\lv.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\mk.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\mr.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\mr_in.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ms.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ms_my.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\mt.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\nb.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\nl.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\nl_be.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\nn.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\pl.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\pt.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\pt_br.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ro.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ru.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ru_ua.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\sh.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\sk.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\sl.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\sq.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\sr.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\sv.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\sw.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ta.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\ta_in.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\te.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\te_in.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\th.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\tr.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\uk.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\vi.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\zh.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\zh_cn.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\zh_hk.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\zh_sg.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+copying C:\Python27\tcl\tcl8.5\msgs\zh_tw.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\msgs
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\opt0.4
+copying C:\Python27\tcl\tcl8.5\opt0.4\optparse.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\opt0.4
+copying C:\Python27\tcl\tcl8.5\opt0.4\pkgIndex.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\opt0.4
+copying C:\Python27\tcl\tcl8.5\package.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5
+copying C:\Python27\tcl\tcl8.5\parray.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5
+copying C:\Python27\tcl\tcl8.5\safe.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5
+copying C:\Python27\tcl\tcl8.5\tclIndex -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5
+copying C:\Python27\tcl\tcl8.5\tm.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Abidjan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Accra -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Addis_Ababa -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Algiers -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Asmara -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Asmera -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Bamako -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Bangui -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Banjul -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Bissau -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Blantyre -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Brazzaville -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Bujumbura -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Cairo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Casablanca -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Ceuta -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Conakry -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Dakar -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Dar_es_Salaam -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Djibouti -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Douala -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\El_Aaiun -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Freetown -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Gaborone -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Harare -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Johannesburg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Juba -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Kampala -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Khartoum -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Kigali -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Kinshasa -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Lagos -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Libreville -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Lome -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Luanda -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Lubumbashi -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Lusaka -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Malabo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Maputo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Maseru -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Mbabane -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Mogadishu -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Monrovia -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Nairobi -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Ndjamena -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Niamey -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Nouakchott -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Ouagadougou -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Porto-Novo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Sao_Tome -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Timbuktu -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Tripoli -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Tunis -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+copying C:\Python27\tcl\tcl8.5\tzdata\Africa\Windhoek -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Africa
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Adak -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Anchorage -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Anguilla -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Antigua -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Araguaina -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\Buenos_Aires -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\Catamarca -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\ComodRivadavia -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\Cordoba -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\Jujuy -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\La_Rioja -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\Mendoza -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\Rio_Gallegos -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\Salta -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\San_Juan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\San_Luis -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\Tucuman -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Argentina\Ushuaia -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Argentina
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Aruba -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Asuncion -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Atikokan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Atka -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Bahia -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Bahia_Banderas -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Barbados -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Belem -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Belize -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Blanc-Sablon -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Boa_Vista -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Bogota -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Boise -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Buenos_Aires -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Cambridge_Bay -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Campo_Grande -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Cancun -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Caracas -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Catamarca -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Cayenne -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Cayman -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Chicago -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Chihuahua -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Coral_Harbour -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Cordoba -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Costa_Rica -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Creston -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Cuiaba -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Curacao -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Danmarkshavn -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Dawson -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Dawson_Creek -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Denver -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Detroit -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Dominica -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Edmonton -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Eirunepe -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\El_Salvador -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Ensenada -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Fortaleza -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Fort_Wayne -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Glace_Bay -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Godthab -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Goose_Bay -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Grand_Turk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Grenada -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Guadeloupe -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Guatemala -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Guayaquil -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Guyana -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Halifax -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Havana -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Hermosillo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\America\Indiana
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Indiana\Indianapolis -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Indiana
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Indiana\Knox -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Indiana
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Indiana\Marengo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Indiana
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Indiana\Petersburg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Indiana
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Indiana\Tell_City -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Indiana
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Indiana\Vevay -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Indiana
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Indiana\Vincennes -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Indiana
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Indiana\Winamac -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Indiana
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Indianapolis -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Inuvik -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Iqaluit -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Jamaica -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Jujuy -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Juneau -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\America\Kentucky
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Kentucky\Louisville -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Kentucky
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Kentucky\Monticello -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\Kentucky
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Knox_IN -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Kralendijk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\La_Paz -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Lima -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Los_Angeles -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Louisville -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Lower_Princes -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Maceio -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Managua -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Manaus -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Marigot -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Martinique -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Matamoros -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Mazatlan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Mendoza -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Menominee -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Merida -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Metlakatla -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Mexico_City -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Miquelon -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Moncton -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Monterrey -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Montevideo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Montreal -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Montserrat -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Nassau -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\New_York -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Nipigon -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Nome -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Noronha -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\America\North_Dakota
+copying C:\Python27\tcl\tcl8.5\tzdata\America\North_Dakota\Beulah -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\North_Dakota
+copying C:\Python27\tcl\tcl8.5\tzdata\America\North_Dakota\Center -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\North_Dakota
+copying C:\Python27\tcl\tcl8.5\tzdata\America\North_Dakota\New_Salem -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America\North_Dakota
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Ojinaga -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Panama -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Pangnirtung -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Paramaribo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Phoenix -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Port-au-Prince -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Porto_Acre -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Porto_Velho -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Port_of_Spain -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Puerto_Rico -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Rainy_River -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Rankin_Inlet -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Recife -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Regina -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Resolute -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Rio_Branco -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Rosario -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Santarem -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Santa_Isabel -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Santiago -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Santo_Domingo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Sao_Paulo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Scoresbysund -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Shiprock -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Sitka -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\St_Barthelemy -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\St_Johns -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\St_Kitts -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\St_Lucia -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\St_Thomas -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\St_Vincent -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Swift_Current -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Tegucigalpa -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Thule -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Thunder_Bay -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Tijuana -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Toronto -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Tortola -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Vancouver -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Virgin -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Whitehorse -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Winnipeg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Yakutat -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+copying C:\Python27\tcl\tcl8.5\tzdata\America\Yellowknife -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\America
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\Casey -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\Davis -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\DumontDUrville -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\Macquarie -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\Mawson -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\McMurdo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\Palmer -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\Rothera -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\South_Pole -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\Syowa -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+copying C:\Python27\tcl\tcl8.5\tzdata\Antarctica\Vostok -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Antarctica
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Arctic
+copying C:\Python27\tcl\tcl8.5\tzdata\Arctic\Longyearbyen -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Arctic
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Aden -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Almaty -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Amman -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Anadyr -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Aqtau -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Aqtobe -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Ashgabat -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Ashkhabad -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Baghdad -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Bahrain -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Baku -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Bangkok -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Beirut -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Bishkek -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Brunei -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Calcutta -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Choibalsan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Chongqing -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Chungking -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Colombo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Dacca -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Damascus -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Dhaka -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Dili -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Dubai -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Dushanbe -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Gaza -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Harbin -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Hebron -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Hong_Kong -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Hovd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Ho_Chi_Minh -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Irkutsk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Istanbul -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Jakarta -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Jayapura -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Jerusalem -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Kabul -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Kamchatka -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Karachi -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Kashgar -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Kathmandu -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Katmandu -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Khandyga -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Kolkata -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Krasnoyarsk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Kuala_Lumpur -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Kuching -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Kuwait -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Macao -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Macau -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Magadan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Makassar -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Manila -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Muscat -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Nicosia -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Novokuznetsk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Novosibirsk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Omsk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Oral -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Phnom_Penh -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Pontianak -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Pyongyang -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Qatar -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Qyzylorda -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Rangoon -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Riyadh -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Saigon -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Sakhalin -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Samarkand -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Seoul -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Shanghai -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Singapore -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Taipei -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Tashkent -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Tbilisi -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Tehran -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Tel_Aviv -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Thimbu -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Thimphu -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Tokyo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Ujung_Pandang -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Ulaanbaatar -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Ulan_Bator -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Urumqi -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Ust-Nera -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Vientiane -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Vladivostok -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Yakutsk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Yekaterinburg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+copying C:\Python27\tcl\tcl8.5\tzdata\Asia\Yerevan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Asia
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\Azores -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\Bermuda -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\Canary -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\Cape_Verde -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\Faeroe -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\Faroe -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\Jan_Mayen -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\Madeira -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\Reykjavik -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\South_Georgia -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\Stanley -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+copying C:\Python27\tcl\tcl8.5\tzdata\Atlantic\St_Helena -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Atlantic
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\ACT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Adelaide -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Brisbane -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Broken_Hill -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Canberra -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Currie -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Darwin -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Eucla -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Hobart -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\LHI -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Lindeman -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Lord_Howe -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Melbourne -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\North -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\NSW -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Perth -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Queensland -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\South -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Sydney -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Tasmania -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Victoria -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\West -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+copying C:\Python27\tcl\tcl8.5\tzdata\Australia\Yancowinna -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Australia
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Brazil
+copying C:\Python27\tcl\tcl8.5\tzdata\Brazil\Acre -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Brazil
+copying C:\Python27\tcl\tcl8.5\tzdata\Brazil\DeNoronha -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Brazil
+copying C:\Python27\tcl\tcl8.5\tzdata\Brazil\East -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Brazil
+copying C:\Python27\tcl\tcl8.5\tzdata\Brazil\West -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Brazil
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Canada
+copying C:\Python27\tcl\tcl8.5\tzdata\Canada\Atlantic -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Canada
+copying C:\Python27\tcl\tcl8.5\tzdata\Canada\Central -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Canada
+copying C:\Python27\tcl\tcl8.5\tzdata\Canada\East-Saskatchewan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Canada
+copying C:\Python27\tcl\tcl8.5\tzdata\Canada\Eastern -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Canada
+copying C:\Python27\tcl\tcl8.5\tzdata\Canada\Mountain -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Canada
+copying C:\Python27\tcl\tcl8.5\tzdata\Canada\Newfoundland -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Canada
+copying C:\Python27\tcl\tcl8.5\tzdata\Canada\Pacific -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Canada
+copying C:\Python27\tcl\tcl8.5\tzdata\Canada\Saskatchewan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Canada
+copying C:\Python27\tcl\tcl8.5\tzdata\Canada\Yukon -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Canada
+copying C:\Python27\tcl\tcl8.5\tzdata\CET -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Chile
+copying C:\Python27\tcl\tcl8.5\tzdata\Chile\Continental -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Chile
+copying C:\Python27\tcl\tcl8.5\tzdata\Chile\EasterIsland -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Chile
+copying C:\Python27\tcl\tcl8.5\tzdata\CST6CDT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Cuba -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\EET -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Egypt -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Eire -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\EST -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\EST5EDT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+0 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+1 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+10 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+11 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+12 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+2 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+3 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+4 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+5 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+6 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+7 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+8 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT+9 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-0 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-1 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-10 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-11 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-12 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-13 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-14 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-2 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-3 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-4 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-5 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-6 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-7 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-8 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT-9 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\GMT0 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\Greenwich -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\UCT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\Universal -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\UTC -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+copying C:\Python27\tcl\tcl8.5\tzdata\Etc\Zulu -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Etc
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Amsterdam -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Andorra -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Athens -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Belfast -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Belgrade -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Berlin -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Bratislava -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Brussels -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Bucharest -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Budapest -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Busingen -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Chisinau -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Copenhagen -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Dublin -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Gibraltar -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Guernsey -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Helsinki -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Isle_of_Man -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Istanbul -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Jersey -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Kaliningrad -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Kiev -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Lisbon -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Ljubljana -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\London -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Luxembourg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Madrid -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Malta -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Mariehamn -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Minsk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Monaco -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Moscow -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Nicosia -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Oslo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Paris -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Podgorica -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Prague -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Riga -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Rome -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Samara -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\San_Marino -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Sarajevo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Simferopol -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Skopje -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Sofia -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Stockholm -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Tallinn -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Tirane -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Tiraspol -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Uzhgorod -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Vaduz -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Vatican -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Vienna -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Vilnius -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Volgograd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Warsaw -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Zagreb -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Zaporozhye -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\Europe\Zurich -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Europe
+copying C:\Python27\tcl\tcl8.5\tzdata\GB -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\GB-Eire -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\GMT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\GMT+0 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\GMT-0 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\GMT0 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Greenwich -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Hongkong -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\HST -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Iceland -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Antananarivo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Chagos -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Christmas -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Cocos -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Comoro -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Kerguelen -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Mahe -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Maldives -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Mauritius -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Mayotte -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Indian\Reunion -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Indian
+copying C:\Python27\tcl\tcl8.5\tzdata\Iran -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Israel -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Jamaica -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Japan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Kwajalein -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Libya -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\MET -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Mexico
+copying C:\Python27\tcl\tcl8.5\tzdata\Mexico\BajaNorte -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Mexico
+copying C:\Python27\tcl\tcl8.5\tzdata\Mexico\BajaSur -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Mexico
+copying C:\Python27\tcl\tcl8.5\tzdata\Mexico\General -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Mexico
+copying C:\Python27\tcl\tcl8.5\tzdata\MST -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\MST7MDT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Navajo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\NZ -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\NZ-CHAT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Apia -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Auckland -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Chatham -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Chuuk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Easter -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Efate -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Enderbury -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Fakaofo -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Fiji -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Funafuti -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Galapagos -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Gambier -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Guadalcanal -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Guam -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Honolulu -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Johnston -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Kiritimati -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Kosrae -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Kwajalein -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Majuro -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Marquesas -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Midway -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Nauru -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Niue -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Norfolk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Noumea -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Pago_Pago -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Palau -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Pitcairn -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Pohnpei -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Ponape -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Port_Moresby -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Rarotonga -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Saipan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Samoa -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Tahiti -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Tarawa -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Tongatapu -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Truk -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Wake -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Wallis -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Pacific\Yap -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\Pacific
+copying C:\Python27\tcl\tcl8.5\tzdata\Poland -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Portugal -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\PRC -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\PST8PDT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\ROC -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\ROK -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Singapore -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\AST4 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\AST4ADT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\CST6 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\CST6CDT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\EST5 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\EST5EDT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\HST10 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\MST7 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\MST7MDT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\PST8 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\PST8PDT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\YST9 -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\SystemV\YST9YDT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\SystemV
+copying C:\Python27\tcl\tcl8.5\tzdata\Turkey -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\UCT -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Universal -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Alaska -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Aleutian -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Arizona -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Central -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\East-Indiana -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Eastern -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Hawaii -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Indiana-Starke -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Michigan -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Mountain -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Pacific -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Pacific-New -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\US\Samoa -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata\US
+copying C:\Python27\tcl\tcl8.5\tzdata\UTC -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\W-SU -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\WET -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\tzdata\Zulu -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5\tzdata
+copying C:\Python27\tcl\tcl8.5\word.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tcl8.5
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\bgerror.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\button.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\choosedir.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\clrpick.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\comdlg.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\console.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\anilabel.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\aniwave.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\arrow.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\bind.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\bitmap.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\browse -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\button.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\check.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\clrpick.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\colors.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\combo.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\cscroll.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\ctext.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\dialog1.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\dialog2.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\en.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\entry1.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\entry2.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\entry3.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\filebox.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\floor.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\form.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\goldberg.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\hello -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\hscale.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\icon.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\image1.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\image2.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\earth.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\earthris.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\face.xbm -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\flagdown.xbm -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\flagup.xbm -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\gray25.xbm -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\letters.xbm -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\noletter.xbm -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\pattern.xbm -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\tcllogo.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\images\teapot.ppm -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos\images
+copying C:\Python27\tcl\tk8.5\demos\items.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\ixset -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\knightstour.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\label.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\labelframe.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\license.terms -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\mclist.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\menu.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\menubu.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\msgbox.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\nl.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\paned1.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\paned2.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\pendulum.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\plot.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\puzzle.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\radio.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\README -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\rmt -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\rolodex -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\ruler.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\sayings.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\search.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\spin.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\square -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\states.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\style.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\tclIndex -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\tcolor -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\text.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\textpeer.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\timer -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\toolbar.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\tree.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\ttkbut.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\ttkmenu.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\ttknote.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\ttkpane.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\ttkprogress.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\ttkscale.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\twind.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\unicodeout.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\vscale.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\demos\widget -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\demos
+copying C:\Python27\tcl\tk8.5\dialog.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\entry.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\focus.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\logo.eps -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\logo100.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\logo64.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\logoLarge.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\logoMed.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\pwrdLogo.eps -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\pwrdLogo100.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\pwrdLogo150.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\pwrdLogo175.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\pwrdLogo200.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\pwrdLogo75.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\README -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\images\tai-ku.gif -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\images
+copying C:\Python27\tcl\tk8.5\license.terms -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\listbox.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\menu.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\mkpsenc.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\msgbox.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\cs.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\da.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\de.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\el.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\en.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\en_gb.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\eo.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\es.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\fr.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\hu.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\it.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\nl.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\pl.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\pt.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\ru.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\msgs\sv.msg -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\msgs
+copying C:\Python27\tcl\tk8.5\obsolete.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\optMenu.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\palette.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\panedwindow.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\pkgIndex.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\safetk.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\scale.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\scrlbar.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\spinbox.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\tclIndex -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\tearoff.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\text.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\tk.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\tkfbox.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\altTheme.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\aquaTheme.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\button.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\clamTheme.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\classicTheme.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\combobox.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\cursors.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\defaults.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\entry.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\fonts.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\menubutton.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\notebook.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\panedwindow.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\progress.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\scale.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\scrollbar.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\sizegrip.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\spinbox.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\treeview.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\ttk.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\utils.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\vistaTheme.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\winTheme.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\ttk\xpTheme.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5\ttk
+copying C:\Python27\tcl\tk8.5\unsupported.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+copying C:\Python27\tcl\tk8.5\xmfbox.tcl -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\tcl\tk8.5
+creating python loader for extension 'PIL._imagingtk' (C:\Python27\lib\site-packages\PIL\_imagingtk.pyd -> PIL._imagingtk.pyd)
+creating python loader for extension '_ctypes' (C:\Python27\DLLs\_ctypes.pyd -> _ctypes.pyd)
+creating python loader for extension 'select' (C:\Python27\DLLs\select.pyd -> select.pyd)
+creating python loader for extension 'unicodedata' (C:\Python27\DLLs\unicodedata.pyd -> unicodedata.pyd)
+creating python loader for extension 'PIL._imaging' (C:\Python27\lib\site-packages\PIL\_imaging.pyd -> PIL._imaging.pyd)
+creating python loader for extension '_tkinter' (C:\Python27\DLLs\_tkinter.pyd -> _tkinter.pyd)
+creating python loader for extension 'win32ui' (C:\Python27\lib\site-packages\Pythonwin\win32ui.pyd -> win32ui.pyd)
+creating python loader for extension '_hashlib' (C:\Python27\DLLs\_hashlib.pyd -> _hashlib.pyd)
+creating python loader for extension '_mysql' (C:\Python27\lib\site-packages\_mysql.pyd -> _mysql.pyd)
+creating python loader for extension 'bz2' (C:\Python27\DLLs\bz2.pyd -> bz2.pyd)
+creating python loader for extension '_ssl' (C:\Python27\DLLs\_ssl.pyd -> _ssl.pyd)
+creating python loader for extension '_imaging' (C:\Python27\lib\site-packages\PIL\_imaging.pyd -> _imaging.pyd)
+creating python loader for extension '_socket' (C:\Python27\DLLs\_socket.pyd -> _socket.pyd)
+creating python loader for extension 'win32print' (C:\Python27\lib\site-packages\win32\win32print.pyd -> win32print.pyd)
+*** finding dlls needed ***
+*** create binaries ***
+*** byte compile python files ***
+writing byte-compilation script 'c:\users\windows7\appdata\local\temp\tmpmd9ojb.py'
+C:\Python27\python.exe -OO c:\users\windows7\appdata\local\temp\tmpmd9ojb.py
+byte-compiling C:\Python27\lib\ConfigParser.py to ConfigParser.pyo
+byte-compiling C:\Python27\lib\StringIO.py to StringIO.pyo
+byte-compiling C:\Python27\lib\UserDict.py to UserDict.pyo
+byte-compiling C:\Python27\lib\__future__.py to __future__.pyo
+byte-compiling C:\Python27\lib\_abcoll.py to _abcoll.pyo
+byte-compiling C:\Python27\lib\_osx_support.py to _osx_support.pyo
+byte-compiling C:\Python27\lib\_strptime.py to _strptime.pyo
+byte-compiling C:\Python27\lib\_threading_local.py to _threading_local.pyo
+byte-compiling C:\Python27\lib\_weakrefset.py to _weakrefset.pyo
+byte-compiling C:\Python27\lib\abc.py to abc.pyo
+byte-compiling C:\Python27\lib\atexit.py to atexit.pyo
+byte-compiling C:\Python27\lib\base64.py to base64.pyo
+byte-compiling C:\Python27\lib\bdb.py to bdb.pyo
+byte-compiling C:\Python27\lib\calendar.py to calendar.pyo
+byte-compiling C:\Python27\lib\cmd.py to cmd.pyo
+byte-compiling C:\Python27\lib\codecs.py to codecs.pyo
+byte-compiling C:\Python27\lib\collections.py to collections.pyo
+byte-compiling C:\Python27\lib\colorsys.py to colorsys.pyo
+byte-compiling C:\Python27\lib\contextlib.py to contextlib.pyo
+byte-compiling C:\Python27\lib\copy.py to copy.pyo
+byte-compiling C:\Python27\lib\copy_reg.py to copy_reg.pyo
+byte-compiling C:\Python27\lib\ctypes\__init__.py to ctypes\__init__.pyo
+byte-compiling C:\Python27\lib\ctypes\_endian.py to ctypes\_endian.pyo
+byte-compiling C:\Python27\lib\decimal.py to decimal.pyo
+byte-compiling C:\Python27\lib\difflib.py to difflib.pyo
+byte-compiling C:\Python27\lib\dis.py to dis.pyo
+byte-compiling C:\Python27\lib\distutils\__init__.py to distutils\__init__.pyo
+byte-compiling C:\Python27\lib\distutils\debug.py to distutils\debug.pyo
+byte-compiling C:\Python27\lib\distutils\errors.py to distutils\errors.pyo
+byte-compiling C:\Python27\lib\distutils\log.py to distutils\log.pyo
+byte-compiling C:\Python27\lib\distutils\spawn.py to distutils\spawn.pyo
+byte-compiling C:\Python27\lib\distutils\sysconfig.py to distutils\sysconfig.pyo
+byte-compiling C:\Python27\lib\distutils\text_file.py to distutils\text_file.pyo
+byte-compiling C:\Python27\lib\doctest.py to doctest.pyo
+byte-compiling C:\Python27\lib\dummy_thread.py to dummy_thread.pyo
+byte-compiling C:\Python27\lib\encodings\__init__.py to encodings\__init__.pyo
+byte-compiling C:\Python27\lib\encodings\aliases.py to encodings\aliases.pyo
+byte-compiling C:\Python27\lib\encodings\ascii.py to encodings\ascii.pyo
+byte-compiling C:\Python27\lib\encodings\base64_codec.py to encodings\base64_codec.pyo
+byte-compiling C:\Python27\lib\encodings\big5.py to encodings\big5.pyo
+byte-compiling C:\Python27\lib\encodings\big5hkscs.py to encodings\big5hkscs.pyo
+byte-compiling C:\Python27\lib\encodings\bz2_codec.py to encodings\bz2_codec.pyo
+byte-compiling C:\Python27\lib\encodings\charmap.py to encodings\charmap.pyo
+byte-compiling C:\Python27\lib\encodings\cp037.py to encodings\cp037.pyo
+byte-compiling C:\Python27\lib\encodings\cp1006.py to encodings\cp1006.pyo
+byte-compiling C:\Python27\lib\encodings\cp1026.py to encodings\cp1026.pyo
+byte-compiling C:\Python27\lib\encodings\cp1140.py to encodings\cp1140.pyo
+byte-compiling C:\Python27\lib\encodings\cp1250.py to encodings\cp1250.pyo
+byte-compiling C:\Python27\lib\encodings\cp1251.py to encodings\cp1251.pyo
+byte-compiling C:\Python27\lib\encodings\cp1252.py to encodings\cp1252.pyo
+byte-compiling C:\Python27\lib\encodings\cp1253.py to encodings\cp1253.pyo
+byte-compiling C:\Python27\lib\encodings\cp1254.py to encodings\cp1254.pyo
+byte-compiling C:\Python27\lib\encodings\cp1255.py to encodings\cp1255.pyo
+byte-compiling C:\Python27\lib\encodings\cp1256.py to encodings\cp1256.pyo
+byte-compiling C:\Python27\lib\encodings\cp1257.py to encodings\cp1257.pyo
+byte-compiling C:\Python27\lib\encodings\cp1258.py to encodings\cp1258.pyo
+byte-compiling C:\Python27\lib\encodings\cp424.py to encodings\cp424.pyo
+byte-compiling C:\Python27\lib\encodings\cp437.py to encodings\cp437.pyo
+byte-compiling C:\Python27\lib\encodings\cp500.py to encodings\cp500.pyo
+byte-compiling C:\Python27\lib\encodings\cp720.py to encodings\cp720.pyo
+byte-compiling C:\Python27\lib\encodings\cp737.py to encodings\cp737.pyo
+byte-compiling C:\Python27\lib\encodings\cp775.py to encodings\cp775.pyo
+byte-compiling C:\Python27\lib\encodings\cp850.py to encodings\cp850.pyo
+byte-compiling C:\Python27\lib\encodings\cp852.py to encodings\cp852.pyo
+byte-compiling C:\Python27\lib\encodings\cp855.py to encodings\cp855.pyo
+byte-compiling C:\Python27\lib\encodings\cp856.py to encodings\cp856.pyo
+byte-compiling C:\Python27\lib\encodings\cp857.py to encodings\cp857.pyo
+byte-compiling C:\Python27\lib\encodings\cp858.py to encodings\cp858.pyo
+byte-compiling C:\Python27\lib\encodings\cp860.py to encodings\cp860.pyo
+byte-compiling C:\Python27\lib\encodings\cp861.py to encodings\cp861.pyo
+byte-compiling C:\Python27\lib\encodings\cp862.py to encodings\cp862.pyo
+byte-compiling C:\Python27\lib\encodings\cp863.py to encodings\cp863.pyo
+byte-compiling C:\Python27\lib\encodings\cp864.py to encodings\cp864.pyo
+byte-compiling C:\Python27\lib\encodings\cp865.py to encodings\cp865.pyo
+byte-compiling C:\Python27\lib\encodings\cp866.py to encodings\cp866.pyo
+byte-compiling C:\Python27\lib\encodings\cp869.py to encodings\cp869.pyo
+byte-compiling C:\Python27\lib\encodings\cp874.py to encodings\cp874.pyo
+byte-compiling C:\Python27\lib\encodings\cp875.py to encodings\cp875.pyo
+byte-compiling C:\Python27\lib\encodings\cp932.py to encodings\cp932.pyo
+byte-compiling C:\Python27\lib\encodings\cp949.py to encodings\cp949.pyo
+byte-compiling C:\Python27\lib\encodings\cp950.py to encodings\cp950.pyo
+byte-compiling C:\Python27\lib\encodings\euc_jis_2004.py to encodings\euc_jis_2004.pyo
+byte-compiling C:\Python27\lib\encodings\euc_jisx0213.py to encodings\euc_jisx0213.pyo
+byte-compiling C:\Python27\lib\encodings\euc_jp.py to encodings\euc_jp.pyo
+byte-compiling C:\Python27\lib\encodings\euc_kr.py to encodings\euc_kr.pyo
+byte-compiling C:\Python27\lib\encodings\gb18030.py to encodings\gb18030.pyo
+byte-compiling C:\Python27\lib\encodings\gb2312.py to encodings\gb2312.pyo
+byte-compiling C:\Python27\lib\encodings\gbk.py to encodings\gbk.pyo
+byte-compiling C:\Python27\lib\encodings\hex_codec.py to encodings\hex_codec.pyo
+byte-compiling C:\Python27\lib\encodings\hp_roman8.py to encodings\hp_roman8.pyo
+byte-compiling C:\Python27\lib\encodings\hz.py to encodings\hz.pyo
+byte-compiling C:\Python27\lib\encodings\idna.py to encodings\idna.pyo
+byte-compiling C:\Python27\lib\encodings\iso2022_jp.py to encodings\iso2022_jp.pyo
+byte-compiling C:\Python27\lib\encodings\iso2022_jp_1.py to encodings\iso2022_jp_1.pyo
+byte-compiling C:\Python27\lib\encodings\iso2022_jp_2.py to encodings\iso2022_jp_2.pyo
+byte-compiling C:\Python27\lib\encodings\iso2022_jp_2004.py to encodings\iso2022_jp_2004.pyo
+byte-compiling C:\Python27\lib\encodings\iso2022_jp_3.py to encodings\iso2022_jp_3.pyo
+byte-compiling C:\Python27\lib\encodings\iso2022_jp_ext.py to encodings\iso2022_jp_ext.pyo
+byte-compiling C:\Python27\lib\encodings\iso2022_kr.py to encodings\iso2022_kr.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_1.py to encodings\iso8859_1.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_10.py to encodings\iso8859_10.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_11.py to encodings\iso8859_11.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_13.py to encodings\iso8859_13.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_14.py to encodings\iso8859_14.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_15.py to encodings\iso8859_15.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_16.py to encodings\iso8859_16.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_2.py to encodings\iso8859_2.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_3.py to encodings\iso8859_3.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_4.py to encodings\iso8859_4.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_5.py to encodings\iso8859_5.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_6.py to encodings\iso8859_6.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_7.py to encodings\iso8859_7.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_8.py to encodings\iso8859_8.pyo
+byte-compiling C:\Python27\lib\encodings\iso8859_9.py to encodings\iso8859_9.pyo
+byte-compiling C:\Python27\lib\encodings\johab.py to encodings\johab.pyo
+byte-compiling C:\Python27\lib\encodings\koi8_r.py to encodings\koi8_r.pyo
+byte-compiling C:\Python27\lib\encodings\koi8_u.py to encodings\koi8_u.pyo
+byte-compiling C:\Python27\lib\encodings\latin_1.py to encodings\latin_1.pyo
+byte-compiling C:\Python27\lib\encodings\mac_arabic.py to encodings\mac_arabic.pyo
+byte-compiling C:\Python27\lib\encodings\mac_centeuro.py to encodings\mac_centeuro.pyo
+byte-compiling C:\Python27\lib\encodings\mac_croatian.py to encodings\mac_croatian.pyo
+byte-compiling C:\Python27\lib\encodings\mac_cyrillic.py to encodings\mac_cyrillic.pyo
+byte-compiling C:\Python27\lib\encodings\mac_farsi.py to encodings\mac_farsi.pyo
+byte-compiling C:\Python27\lib\encodings\mac_greek.py to encodings\mac_greek.pyo
+byte-compiling C:\Python27\lib\encodings\mac_iceland.py to encodings\mac_iceland.pyo
+byte-compiling C:\Python27\lib\encodings\mac_latin2.py to encodings\mac_latin2.pyo
+byte-compiling C:\Python27\lib\encodings\mac_roman.py to encodings\mac_roman.pyo
+byte-compiling C:\Python27\lib\encodings\mac_romanian.py to encodings\mac_romanian.pyo
+byte-compiling C:\Python27\lib\encodings\mac_turkish.py to encodings\mac_turkish.pyo
+byte-compiling C:\Python27\lib\encodings\mbcs.py to encodings\mbcs.pyo
+byte-compiling C:\Python27\lib\encodings\palmos.py to encodings\palmos.pyo
+byte-compiling C:\Python27\lib\encodings\ptcp154.py to encodings\ptcp154.pyo
+byte-compiling C:\Python27\lib\encodings\punycode.py to encodings\punycode.pyo
+byte-compiling C:\Python27\lib\encodings\quopri_codec.py to encodings\quopri_codec.pyo
+byte-compiling C:\Python27\lib\encodings\raw_unicode_escape.py to encodings\raw_unicode_escape.pyo
+byte-compiling C:\Python27\lib\encodings\rot_13.py to encodings\rot_13.pyo
+byte-compiling C:\Python27\lib\encodings\shift_jis.py to encodings\shift_jis.pyo
+byte-compiling C:\Python27\lib\encodings\shift_jis_2004.py to encodings\shift_jis_2004.pyo
+byte-compiling C:\Python27\lib\encodings\shift_jisx0213.py to encodings\shift_jisx0213.pyo
+byte-compiling C:\Python27\lib\encodings\string_escape.py to encodings\string_escape.pyo
+byte-compiling C:\Python27\lib\encodings\tis_620.py to encodings\tis_620.pyo
+byte-compiling C:\Python27\lib\encodings\undefined.py to encodings\undefined.pyo
+byte-compiling C:\Python27\lib\encodings\unicode_escape.py to encodings\unicode_escape.pyo
+byte-compiling C:\Python27\lib\encodings\unicode_internal.py to encodings\unicode_internal.pyo
+byte-compiling C:\Python27\lib\encodings\utf_16.py to encodings\utf_16.pyo
+byte-compiling C:\Python27\lib\encodings\utf_16_be.py to encodings\utf_16_be.pyo
+byte-compiling C:\Python27\lib\encodings\utf_16_le.py to encodings\utf_16_le.pyo
+byte-compiling C:\Python27\lib\encodings\utf_32.py to encodings\utf_32.pyo
+byte-compiling C:\Python27\lib\encodings\utf_32_be.py to encodings\utf_32_be.pyo
+byte-compiling C:\Python27\lib\encodings\utf_32_le.py to encodings\utf_32_le.pyo
+byte-compiling C:\Python27\lib\encodings\utf_7.py to encodings\utf_7.pyo
+byte-compiling C:\Python27\lib\encodings\utf_8.py to encodings\utf_8.pyo
+byte-compiling C:\Python27\lib\encodings\utf_8_sig.py to encodings\utf_8_sig.pyo
+byte-compiling C:\Python27\lib\encodings\uu_codec.py to encodings\uu_codec.pyo
+byte-compiling C:\Python27\lib\encodings\zlib_codec.py to encodings\zlib_codec.pyo
+byte-compiling C:\Python27\lib\fnmatch.py to fnmatch.pyo
+byte-compiling C:\Python27\lib\ftplib.py to ftplib.pyo
+byte-compiling C:\Python27\lib\functools.py to functools.pyo
+byte-compiling C:\Python27\lib\genericpath.py to genericpath.pyo
+byte-compiling C:\Python27\lib\getopt.py to getopt.pyo
+byte-compiling C:\Python27\lib\getpass.py to getpass.pyo
+byte-compiling C:\Python27\lib\gettext.py to gettext.pyo
+byte-compiling C:\Python27\lib\gzip.py to gzip.pyo
+byte-compiling C:\Python27\lib\hashlib.py to hashlib.pyo
+byte-compiling C:\Python27\lib\heapq.py to heapq.pyo
+byte-compiling C:\Python27\lib\httplib.py to httplib.pyo
+byte-compiling C:\Python27\lib\inspect.py to inspect.pyo
+byte-compiling C:\Python27\lib\io.py to io.pyo
+byte-compiling C:\Python27\lib\keyword.py to keyword.pyo
+byte-compiling C:\Python27\lib\lib-tk\FixTk.py to FixTk.pyo
+byte-compiling C:\Python27\lib\lib-tk\Tkconstants.py to Tkconstants.pyo
+byte-compiling C:\Python27\lib\lib-tk\Tkinter.py to Tkinter.pyo
+byte-compiling C:\Python27\lib\lib-tk\tkCommonDialog.py to tkCommonDialog.pyo
+byte-compiling C:\Python27\lib\lib-tk\tkFileDialog.py to tkFileDialog.pyo
+byte-compiling C:\Python27\lib\lib-tk\tkMessageBox.py to tkMessageBox.pyo
+byte-compiling C:\Python27\lib\lib-tk\ttk.py to ttk.pyo
+byte-compiling C:\Python27\lib\linecache.py to linecache.pyo
+byte-compiling C:\Python27\lib\locale.py to locale.pyo
+byte-compiling C:\Python27\lib\logging\__init__.py to logging\__init__.pyo
+byte-compiling C:\Python27\lib\mimetools.py to mimetools.pyo
+byte-compiling C:\Python27\lib\mimetypes.py to mimetypes.pyo
+byte-compiling C:\Python27\lib\ntpath.py to ntpath.pyo
+byte-compiling C:\Python27\lib\nturl2path.py to nturl2path.pyo
+byte-compiling C:\Python27\lib\numbers.py to numbers.pyo
+byte-compiling C:\Python27\lib\opcode.py to opcode.pyo
+byte-compiling C:\Python27\lib\optparse.py to optparse.pyo
+byte-compiling C:\Python27\lib\os.py to os.pyo
+byte-compiling C:\Python27\lib\os2emxpath.py to os2emxpath.pyo
+byte-compiling C:\Python27\lib\pdb.py to pdb.pyo
+byte-compiling C:\Python27\lib\pickle.py to pickle.pyo
+byte-compiling C:\Python27\lib\posixpath.py to posixpath.pyo
+byte-compiling C:\Python27\lib\pprint.py to pprint.pyo
+byte-compiling C:\Python27\lib\py_compile.py to py_compile.pyo
+byte-compiling C:\Python27\lib\quopri.py to quopri.pyo
+byte-compiling C:\Python27\lib\random.py to random.pyo
+byte-compiling C:\Python27\lib\re.py to re.pyo
+byte-compiling C:\Python27\lib\repr.py to repr.pyo
+byte-compiling C:\Python27\lib\rfc822.py to rfc822.pyo
+byte-compiling C:\Python27\lib\sets.py to sets.pyo
+byte-compiling C:\Python27\lib\sha.py to sha.pyo
+byte-compiling C:\Python27\lib\shlex.py to shlex.pyo
+byte-compiling C:\Python27\lib\shutil.py to shutil.pyo
+byte-compiling C:\Python27\lib\site-packages\MySQLdb\__init__.py to MySQLdb\__init__.pyo
+byte-compiling C:\Python27\lib\site-packages\MySQLdb\connections.py to MySQLdb\connections.pyo
+byte-compiling C:\Python27\lib\site-packages\MySQLdb\constants\CLIENT.py to MySQLdb\constants\CLIENT.pyo
+byte-compiling C:\Python27\lib\site-packages\MySQLdb\constants\FIELD_TYPE.py to MySQLdb\constants\FIELD_TYPE.pyo
+byte-compiling C:\Python27\lib\site-packages\MySQLdb\constants\FLAG.py to MySQLdb\constants\FLAG.pyo
+byte-compiling C:\Python27\lib\site-packages\MySQLdb\constants\__init__.py to MySQLdb\constants\__init__.pyo
+byte-compiling C:\Python27\lib\site-packages\MySQLdb\converters.py to MySQLdb\converters.pyo
+byte-compiling C:\Python27\lib\site-packages\MySQLdb\cursors.py to MySQLdb\cursors.pyo
+byte-compiling C:\Python27\lib\site-packages\MySQLdb\release.py to MySQLdb\release.pyo
+byte-compiling C:\Python27\lib\site-packages\MySQLdb\times.py to MySQLdb\times.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py to PIL\BmpImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py to BmpImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\GifImagePlugin.py to PIL\GifImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\GifImagePlugin.py to GifImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\GimpGradientFile.py to GimpGradientFile.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\GimpGradientFile.py to PIL\GimpGradientFile.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\GimpPaletteFile.py to PIL\GimpPaletteFile.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\GimpPaletteFile.py to GimpPaletteFile.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\Image.py to PIL\Image.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\Image.py to Image.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageChops.py to PIL\ImageChops.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageChops.py to ImageChops.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageColor.py to PIL\ImageColor.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageColor.py to ImageColor.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageFile.py to ImageFile.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageFile.py to PIL\ImageFile.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageGrab.py to ImageGrab.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageMode.py to PIL\ImageMode.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageMode.py to ImageMode.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImagePalette.py to ImagePalette.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImagePalette.py to PIL\ImagePalette.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageShow.py to PIL\ImageShow.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageShow.py to ImageShow.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageTk.py to PIL\ImageTk.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\ImageWin.py to ImageWin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\JpegImagePlugin.py to JpegImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\JpegImagePlugin.py to PIL\JpegImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\PaletteFile.py to PaletteFile.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\PaletteFile.py to PIL\PaletteFile.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\PngImagePlugin.py to PIL\PngImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\PngImagePlugin.py to PngImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\PpmImagePlugin.py to PpmImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\PpmImagePlugin.py to PIL\PpmImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\TiffImagePlugin.py to TiffImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\TiffImagePlugin.py to PIL\TiffImagePlugin.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\TiffTags.py to TiffTags.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\TiffTags.py to PIL\TiffTags.pyo
+byte-compiling C:\Python27\lib\site-packages\PIL\__init__.py to PIL\__init__.pyo
+byte-compiling C:\Python27\lib\site-packages\_mysql_exceptions.py to _mysql_exceptions.pyo
+byte-compiling C:\Python27\lib\site-packages\win32\lib\win32con.py to win32con.pyo
+byte-compiling C:\Python27\lib\socket.py to socket.pyo
+byte-compiling C:\Python27\lib\sre.py to sre.pyo
+byte-compiling C:\Python27\lib\sre_compile.py to sre_compile.pyo
+byte-compiling C:\Python27\lib\sre_constants.py to sre_constants.pyo
+byte-compiling C:\Python27\lib\sre_parse.py to sre_parse.pyo
+byte-compiling C:\Python27\lib\ssl.py to ssl.pyo
+byte-compiling C:\Python27\lib\stat.py to stat.pyo
+byte-compiling C:\Python27\lib\string.py to string.pyo
+byte-compiling C:\Python27\lib\stringprep.py to stringprep.pyo
+byte-compiling C:\Python27\lib\struct.py to struct.pyo
+byte-compiling C:\Python27\lib\subprocess.py to subprocess.pyo
+byte-compiling C:\Python27\lib\tarfile.py to tarfile.pyo
+byte-compiling C:\Python27\lib\tempfile.py to tempfile.pyo
+byte-compiling C:\Python27\lib\textwrap.py to textwrap.pyo
+byte-compiling C:\Python27\lib\threading.py to threading.pyo
+byte-compiling C:\Python27\lib\token.py to token.pyo
+byte-compiling C:\Python27\lib\tokenize.py to tokenize.pyo
+byte-compiling C:\Python27\lib\traceback.py to traceback.pyo
+byte-compiling C:\Python27\lib\types.py to types.pyo
+byte-compiling C:\Python27\lib\unittest\__init__.py to unittest\__init__.pyo
+byte-compiling C:\Python27\lib\unittest\case.py to unittest\case.pyo
+byte-compiling C:\Python27\lib\unittest\loader.py to unittest\loader.pyo
+byte-compiling C:\Python27\lib\unittest\main.py to unittest\main.pyo
+byte-compiling C:\Python27\lib\unittest\result.py to unittest\result.pyo
+byte-compiling C:\Python27\lib\unittest\runner.py to unittest\runner.pyo
+byte-compiling C:\Python27\lib\unittest\signals.py to unittest\signals.pyo
+byte-compiling C:\Python27\lib\unittest\suite.py to unittest\suite.pyo
+byte-compiling C:\Python27\lib\unittest\util.py to unittest\util.pyo
+byte-compiling C:\Python27\lib\urllib.py to urllib.pyo
+byte-compiling C:\Python27\lib\urlparse.py to urlparse.pyo
+byte-compiling C:\Python27\lib\uu.py to uu.pyo
+byte-compiling C:\Python27\lib\warnings.py to warnings.pyo
+byte-compiling C:\Python27\lib\weakref.py to weakref.pyo
+byte-compiling C:\Python27\lib\zipfile.py to zipfile.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\PIL._imaging.py to PIL\_imaging.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\PIL._imagingtk.py to PIL\_imagingtk.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\_ctypes.py to _ctypes.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\_hashlib.py to _hashlib.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\_imaging.py to _imaging.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\_mysql.py to _mysql.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\_socket.py to _socket.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\_ssl.py to _ssl.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\_tkinter.py to _tkinter.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\bz2.py to bz2.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\select.py to select.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\unicodedata.py to unicodedata.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\win32print.py to win32print.pyo
+byte-compiling C:\Users\Windows7\Desktop\Projekt Eschaton\build\bdist.win32\winexe\temp\win32ui.py to win32ui.pyo
+removing c:\users\windows7\appdata\local\temp\tmpmd9ojb.py
+*** copy extensions ***
+copying C:\Python27\DLLs\_ctypes.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\DLLs\_hashlib.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\DLLs\_socket.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\DLLs\_ssl.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\DLLs\_tkinter.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\DLLs\bz2.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\DLLs\select.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\DLLs\unicodedata.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\lib\site-packages\PIL\_imaging.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\PIL._imaging.pyd
+copying C:\Python27\lib\site-packages\PIL\_imaging.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\lib\site-packages\PIL\_imagingtk.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs\PIL._imagingtk.pyd
+copying C:\Python27\lib\site-packages\Pythonwin\win32ui.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\lib\site-packages\_mysql.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\lib\site-packages\win32\win32print.pyd -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+*** copy dlls ***
+copying C:\Python27\w9xpopen.exe -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe
+copying C:\Windows\system32\python27.dll -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe
+setting sys.winver for 'C:\Users\Windows7\Desktop\Projekt Eschaton\exe\python27.dll' to 'Eschaton'
+copying C:\Python27\DLLs\tk85.dll -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Windows\system32\pywintypes27.dll -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+copying C:\Python27\DLLs\tcl85.dll -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\./DLLs
+*** copy data files ***
+copying config.ini -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe
+creating C:\Users\Windows7\Desktop\Projekt Eschaton\exe\images
+copying images\Eschaton.png -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\images
+copying images\favicon.ico -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\images
+copying images\bin.png -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\images
+copying images\checkmark.png -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\images
+copying images\info.png -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\images
+copying images\noavatar.png -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\images
+copying images\pencil.png -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\images
+copying images\plus.png -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\images
+copying images\printer.png -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\images
+copying C:\Python27\lib\site-packages\py2exe\run_w.exe -> C:\Users\Windows7\Desktop\Projekt Eschaton\exe\Eschaton.exe
+The following modules appear to be missing
+['ICCProfile', '_grabscreen', '_imaging_gif', '_scproxy', '_sysconfigdata', 'email.utils']
+
+*** binary dependencies ***
+Your executable(s) also depend on these dlls which are not included,
+you may or may not need to distribute them.
+
+Make sure you have the license if you distribute any of them, and
+make sure you don't distribute files belonging to the operating system.
+
+   OLEAUT32.dll - C:\Windows\system32\OLEAUT32.dll
+   USER32.dll - C:\Windows\system32\USER32.dll
+   mfc90.dll - C:\Python27\lib\site-packages\Pythonwin\mfc90.dll
+   SHELL32.dll - C:\Windows\system32\SHELL32.dll
+   ole32.dll - C:\Windows\system32\ole32.dll
+   COMDLG32.dll - C:\Windows\system32\COMDLG32.dll
+   COMCTL32.dll - C:\Windows\system32\COMCTL32.dll
+   ADVAPI32.dll - C:\Windows\system32\ADVAPI32.dll
+   CRYPT32.dll - C:\Windows\system32\CRYPT32.dll
+   WS2_32.dll - C:\Windows\system32\WS2_32.dll
+   WINSPOOL.DRV - C:\Windows\system32\WINSPOOL.DRV
+   GDI32.dll - C:\Windows\system32\GDI32.dll
+   IMM32.dll - C:\Windows\system32\IMM32.dll
+   KERNEL32.dll - C:\Windows\system32\KERNEL32.dll

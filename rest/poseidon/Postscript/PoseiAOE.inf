@@ -1,0 +1,24 @@
+FontName (PoseidonAOE)
+FullName (Poseidon AOE)
+AppleName (PoseidonAOE)
+FamilyName (Poseidon AOE)
+Version (001.000)
+isFixedPitch false
+CharacterSet (custom)
+Encoding (SpecificEncoding)
+Pi true
+ItalicAngle 0
+CapHeight 722
+UnderlinePosition -133
+UnderlineThickness 20
+StemWidth 44
+Serif false
+AppleName (Poseidon AOE)
+MSMenuName (Poseidon AOE)
+VPMenuName (Poseidon AOE)
+WORDMenuName (Poseidon AOE)
+AppleFONDID 4218
+VPStyle (N)
+WindowsCharSet 200
+WindowsFirstChar 32
+WindowsLastChar 255
